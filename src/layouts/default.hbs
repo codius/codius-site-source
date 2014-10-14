@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{! Document Settings }}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  {{! Page Meta }}
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+  {{! Styles'n'Scripts }}
+  {{#block "styles"}}
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/common.css"}}" />
+  {{/block}}
+
+  <script src="//use.typekit.net/ftt0wcm.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body class="{{body_class}}">
+
+  {{! Everything else gets inserted here }}
+  {{{body}}}
+
+  {{> footer}}
+
+  {{#block "scripts"}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+  {{/block}}
+
+</body>
+</html>

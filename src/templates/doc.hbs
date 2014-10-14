@@ -1,0 +1,22 @@
+{{#extend "default"}}
+  {{> header}}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9" role="main">
+        {{{body}}}
+      </div>
+      <div class="col-md-3">
+        <div class="list-group hidden-print hidden-xs hidden-sm" role="complementary">
+          <ul class="nav">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Getting Started</a>
+              <ul class="nav">
+                <li><a href="#">Overview</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/extend}}

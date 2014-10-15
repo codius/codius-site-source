@@ -1,0 +1,41 @@
+---
+section: playground
+---
+{{#append "styles"}}
+<link rel="stylesheet" type="text/css" href="{{asset "css/playground.css"}}" />
+{{/append}}
+<header>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-left">
+        <a href="#" class="btn btn-success navbar-btn"><i class="icon-play"></i>&nbsp;Run</a>
+      </div>
+      <div class="navbar-right">
+        <a href="#" class="btn btn-default navbar-btn"><i class="icon-cog"></i>&ensp;Settings</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="editor">function sayHello() {
+  console.log('Hello, World');
+}
+
+for (var i = 0; i < 5; i++) {
+  sayHello();
+}</div>
+
+{{#replace "footer"}}
+{{/replace}}
+
+<script src="{{asset "js/ace/ace.js"}}" type="text/javascript" charset="utf-8"></script>
+<script>
+  var editor = ace.edit("editor");
+  editor.setTheme("ace/theme/monokai");
+  editor.setOptions({
+    fontFamily: "droid-sans-mono",
+    fontSize: "10pt"
+  });
+  editor.getSession().setMode("ace/mode/javascript");
+</script>
+</body>
+</html>

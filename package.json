@@ -33,6 +33,10 @@
     "gulp-marked": "~1.0.0",
     "gulp-wrap": "~0.3.0",
     "handlebars": "~2.0.0",
-    "map-stream": "~0.1.0"
+    "map-stream": "~0.1.0",
+    "gulp-sass": "~1.2.0",
+    "gulp-autoprefixer": "~1.0.1",
+    "gulp-ruby-sass": "~0.7.1",
+    "express-redirect": "~1.1.1"
   }
 }

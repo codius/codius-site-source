@@ -1,3 +1,3 @@
 module.exports = function (text) {
-  return '/src/assets/'+text;
+  return '/assets/'+text;
 };

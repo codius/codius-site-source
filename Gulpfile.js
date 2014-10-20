@@ -4,9 +4,27 @@ var hb = require('gulp-hb');
 var marked = require('gulp-marked');
 var wrap = require('gulp-wrap');
 var ext = require('gulp-ext-replace');
+var sass = require('gulp-ruby-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var map = require('map-stream');
 var extend = require('extend');
 var path = require('path');
+
+gulp.task('assets', function () {
+  return gulp
+    .src('./src/assets/{fonts,css,js,img}/**/*', {base: './src/assets'})
+    .pipe(gulp.dest('./web/assets'));
+});
+
+gulp.task('css', function () {
+  gulp.src('./src/assets/scss/*.scss')
+    .pipe(sass())
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('./web/assets/css'));
+});
 
 gulp.task('docs', function () {
   return gulp
@@ -40,7 +58,7 @@ gulp.task('docs', function () {
 
 gulp.task('web', function () {
   return gulp
-    .src('./src/pages/*.hbs')
+    .src('./src/pages/**/*.hbs', {base: './src/pages'})
     .pipe(frontMatter())
     .pipe(map(function (file, callback) {
       file.shortName = path.basename(file.path, path.extname(file.path));
@@ -71,4 +89,4 @@ gulp.task('web', function () {
 gulp.task('watch', function() {
   gulp.watch('src/**/*', ['default']);
 });
-gulp.task('default', ['docs', 'web']);
+gulp.task('default', ['assets', 'css', 'docs', 'web']);

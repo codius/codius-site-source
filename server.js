@@ -35,6 +35,4 @@ ghost({
   app.use(ghostServer.config.paths.subdir, ghostServer.rootApp);
 
   ghostServer.start(app);
-
-  app.listen(3000);
 });

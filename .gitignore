@@ -4,3 +4,13 @@
 node_modules/
 web/
 .sass-cache/
+
+# Ghost
+/core/server/data/export/exported*
+/core/client/docs/_site
+/content/tmp/*
+/content/data/*
+/content/apps/**/*
+/content/themes/**/*
+/content/images/**/*
+!/content/themes/casper/**

@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'codius-icons';
-	src:url('../fonts/codius-icons.eot?ea530f');
-	src:url('../fonts/codius-icons.eot?#iefixea530f') format('embedded-opentype'),
-		url('../fonts/codius-icons.woff?ea530f') format('woff'),
-		url('../fonts/codius-icons.ttf?ea530f') format('truetype'),
-		url('../fonts/codius-icons.svg?ea530f#codius-icons') format('svg');
+	src:url('../fonts/codius-icons.eot?1qdqkt');
+	src:url('../fonts/codius-icons.eot?#iefix1qdqkt') format('embedded-opentype'),
+		url('../fonts/codius-icons.woff?1qdqkt') format('woff'),
+		url('../fonts/codius-icons.ttf?1qdqkt') format('truetype'),
+		url('../fonts/codius-icons.svg?1qdqkt#codius-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -27,32 +27,35 @@
 	content: "\e600";
 }
 .icon-connection:before {
-	content: "\e602";
-}
-.icon-credit:before {
-	content: "\e603";
-}
-.icon-bubbles:before {
-	content: "\e604";
-}
-.icon-users:before {
-	content: "\e605";
-}
-.icon-key:before {
-	content: "\e606";
-}
-.icon-lock:before {
-	content: "\e607";
-}
-.icon-cog:before {
-	content: "\e60a";
-}
-.icon-play:before {
-	content: "\e609";
-}
-.icon-github:before {
 	content: "\e601";
 }
-.icon-gauge:before {
+.icon-credit:before {
+	content: "\e602";
+}
+.icon-bubbles:before {
+	content: "\e603";
+}
+.icon-users:before {
+	content: "\e604";
+}
+.icon-key:before {
+	content: "\e605";
+}
+.icon-lock:before {
+	content: "\e606";
+}
+.icon-cog:before {
+	content: "\e607";
+}
+.icon-menu:before {
+	content: "\e60b";
+}
+.icon-play:before {
 	content: "\e608";
+}
+.icon-github:before {
+	content: "\e609";
+}
+.icon-gauge:before {
+	content: "\e60a";
 }

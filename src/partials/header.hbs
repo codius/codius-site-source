@@ -3,15 +3,26 @@
 {{/block}}
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
-      <i id="navbar-logo" class="icon-logo navbar-brand"></i>
-      <a id="navbar-brand" class="navbar-brand">Codius <span>{{file.section}}{{#if @blog}}Blog{{/if}}</span></a>
-      <a href="https://github.com/codius" class="btn btn-default navbar-btn navbar-right"><i class="icon-github"></i>&ensp;Github</a>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/">Home</a></li>
-        <li><a href="/docs/">Docs</a></li>
-        <li><a href="/playground/">Playground</a></li>
-        <li><a href="/blog/">Blog</a></li>
-      </ul>
+      <div class="navbar-header collapsed" data-toggle="collapse" data-target="#navbar-menu">
+        <button type="button" class="navbar-toggle">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <i id="navbar-logo" class="icon-logo navbar-brand"></i>
+        <a id="navbar-brand" class="navbar-brand">Codius <span>{{file.section}}{{#if @blog}}Blog{{/if}}</span></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <a href="https://github.com/codius" class="btn btn-default navbar-btn navbar-right"><i class="icon-github"></i>&ensp;Github</a>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">Home</a></li>
+          <li><a href="/docs/">Docs</a></li>
+          <li><a href="/playground/">Playground</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
   <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>

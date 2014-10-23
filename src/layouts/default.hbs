@@ -26,21 +26,28 @@
   <script src="//use.typekit.net/ftt0wcm.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 </head>
-<body class="{{body_class}}">
+<body class="{{body_class}} near-top">
 
-  {{! Everything else gets inserted here }}
-  {{{body}}}
+  {{> header}}
 
-  {{#block "footer"}}
-  {{> footer}}
-  {{/block}}
+  <div class="drawer">
+    <ul class="nav">
+    </ul>
+  </div>
+  <div class="canvas">
+    {{! Everything else gets inserted here }}
+    {{{body}}}
 
-  {{#block "scripts"}}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
-    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-  {{/block}}
+    {{#block "footer"}}
+    {{> footer}}
+    {{/block}}
 
+    {{#block "scripts"}}
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+      <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+      <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    {{/block}}
+  </div>
 </body>
 </html>

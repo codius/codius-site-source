@@ -29,7 +29,7 @@ ghost({
   app.use(express.static(__dirname + '/web'));
 
   // Default documentation page
-  app.redirect('/docs', '/docs/getting-started');
+  app.redirect('/docs', '/docs/setup-cli');
 
   // Ghost blog
   app.use(ghostServer.config.paths.subdir, ghostServer.rootApp);

@@ -8,35 +8,42 @@ header.main-header {
 .main-header .navbar #navbar-brand {
   transition: all 0.5s ease;
 }
-.main-header.near-top .navbar {
+.near-top .main-header .navbar {
   padding-top: 25px;
   background: transparent;
 }
 
-.main-header.near-top .navbar #navbar-logo {
+.near-top .main-header .navbar #navbar-logo {
   background-color: transparent;
 }
-.main-header.near-top .navbar #navbar-brand {
+.near-top .main-header .navbar #navbar-brand {
   padding-left: 0;
 }
 
-.main-header.near-top .navbar-nav > li > a {
+.near-top .main-header .navbar-nav > li > a {
   color: #fff;
 }
 
-.main-header.near-top .navbar-nav > li > a:hover {
+.near-top .main-header .navbar-nav > li > a:hover {
   background-color: #333;
 }
 
-.main-header.near-top a.btn {
+.near-top .main-header a.btn {
   color: #fff;
   border-color: #fff !important;
 }
 
-.main-header.near-top a.btn:hover {
+.near-top .main-header a.btn:hover {
   background-color: #333;
 }
 
+.drawer {
+  transition: all 0.5s ease;
+}
+
+.near-top .drawer {
+  padding-top: 25px;
+}
 
 .hero {
   padding: 5em 3em 3em;

@@ -7,7 +7,6 @@ html {
   max-height: 100%;
   font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: #eceff1;
 }
 
 body {
@@ -18,10 +17,14 @@ body {
   font-size: 1.8rem;
   line-height: 1.75em;
   color: #3A4145;
-  background: #eceff1;
+  background: #333;
   -webkit-font-feature-settings: 'kern' 1;
   -moz-font-feature-settings: 'kern' 1;
   -o-font-feature-settings: 'kern' 1;
+}
+
+.canvas {
+  background: #eceff1;
 }
 
 h1 {
@@ -94,74 +97,120 @@ header.main-header {
   position: relative;
 }
 
-.navbar-inverse .navbar-header {
-  cursor: pointer;
+.navbar-header {
+  float: left;
 }
 
-.navbar-inverse .navbar-toggle {
-  position: absolute;
-  background: transparent;
-  border: 0;
-  top: 7px;
-  left: 4px;
-  margin: 0;
+/* Responsive sidebar menu */
+@media (max-width: 767px) {
+  /* Navbar toggle */
+  .navbar-inverse .navbar-header {
+    cursor: pointer;
+  }
+
+  .navbar-inverse .navbar-toggle {
+    position: absolute;
+    background: transparent;
+    border: 0;
+    top: 7px;
+    left: 4px;
+    margin: 0;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+  }
+
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+    height: 4px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-inverse .navbar-toggle .icon-bar:nth-child(1) {
+    transform: translate3d(0,8px,0) rotate3d(0,0,1,45deg);
+  }
+
+  .navbar-inverse .navbar-toggle .icon-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-inverse .navbar-toggle .icon-bar:nth-child(3) {
+    transform: translate3d(0,-8px,0) rotate3d(0,0,1,-45deg);
+  }
+
+  .navbar-inverse .navbar-header #navbar-logo {
+    box-sizing: border-box;
+    width: 50px;
+    padding-left: 50px;
+    padding-right: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-inverse .navbar-header.collapsed #navbar-logo {
+    padding: 15px;
+  }
+
+  .navbar-inverse .navbar-header.collapsed:hover #navbar-logo {
+    padding-left: 21px;
+  }
+
+  .navbar-inverse .navbar-header.collapsed .navbar-toggle .icon-bar {
+    transform: none;
+    opacity: 1;
+  }
+
+  .navbar-inverse .navbar-header:hover .navbar-toggle, .navbar-inverse .navbar-toggle:focus {
+    background: transparent;
+  }
+
+  .navbar-inverse .navbar-header.collapsed .navbar-toggle {
+    left: -25px;
+  }
+
+  .navbar-inverse .navbar-header.collapsed:hover .navbar-toggle {
+    left: -18px;
+  }
+
+  /* Sidebar */
+  .canvas {
+    transform-origin: 0 0;
+    perspective: 500px;
+    transition: all 0.5s ease;
+  }
+  .navigating .canvas {
+    opacity: 0.5;
+    transform: translate3d(265px, 15px, 0) scale3d(0.9, 0.9, 1);
+  }
+}
+
+.drawer {
+  position: fixed;
+  width: 250px;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+}
+
+.drawer ul li {
+
+}
+.drawer ul li > a {
+  color: #fff;
   transition: all 0.5s ease;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 
-.navbar-toggle .icon-bar+.icon-bar {
-  margin-top: 4px;
+.drawer ul li > a:hover {
+  background-color: #000;
 }
 
-.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #fff;
-  height: 4px;
-  transition: all 0.5s ease;
-}
-
-.navbar-inverse .navbar-toggle .icon-bar:nth-child(1) {
-  transform: translate3d(0,8px,0) rotate3d(0,0,1,45deg);
-}
-
-.navbar-inverse .navbar-toggle .icon-bar:nth-child(2) {
-  opacity: 0;
-}
-
-.navbar-inverse .navbar-toggle .icon-bar:nth-child(3) {
-  transform: translate3d(0,-8px,0) rotate3d(0,0,1,-45deg);
-}
-
-.navbar-inverse .navbar-header #navbar-logo {
-  box-sizing: border-box;
-  width: 50px;
-  padding-left: 50px;
-  padding-right: 0;
-  overflow: hidden;
-  transition: all 0.5s ease;
-}
-
-.navbar-inverse .navbar-header.collapsed #navbar-logo {
-  padding: 15px;
-}
-
-.navbar-inverse .navbar-header.collapsed:hover #navbar-logo {
-  padding-left: 21px;
-}
-
-.navbar-inverse .navbar-header.collapsed .navbar-toggle .icon-bar {
-  transform: none;
-  opacity: 1;
-}
-
-.navbar-inverse .navbar-header:hover .navbar-toggle, .navbar-inverse .navbar-toggle:focus {
-  background: transparent;
-}
-
-.navbar-inverse .navbar-header.collapsed .navbar-toggle {
-  left: -25px;
-}
-
-.navbar-inverse .navbar-header.collapsed:hover .navbar-toggle {
-  left: -18px;
+.canvas {
+  position: relative;
 }
 
 .main-header a.btn {

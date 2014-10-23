@@ -3,9 +3,9 @@ jQuery(function($) {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 20) {
-      $(".main-header").removeClass("near-top");
+      $(document.body).removeClass("near-top");
     } else {
-      $(".main-header").addClass("near-top");
+      $(document.body).addClass("near-top");
     }
   };
   $(window).scroll(updateScroll);

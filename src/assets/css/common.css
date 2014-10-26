@@ -1,6 +1,7 @@
 @import "https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css";
 @import "bootflat.css";
 @import "icons.css";
+@import "util.css";
 
 html {
   height: 100%;
@@ -68,7 +69,7 @@ header.main-header {
 }
 
 #navbar-logo {
-  background-color: #3f51b5;
+  background-color: #259b24;
   color: #fff;
   font-size: 21px;
 }

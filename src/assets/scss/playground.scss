@@ -1,0 +1,59 @@
+#editor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+}
+
+#output {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  background-color: #222;
+  border-left: 1px solid #181818;
+  padding: 1px 4px;
+  white-space: pre;
+  font-family: "droid-sans-mono", monospace;
+  font-size: 10pt;
+  line-height: 1.2;
+  color: #aaa;
+}
+
+.canvas {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.navbar {
+  padding-right: 15px;
+  border-bottom: 2px solid #181818;
+}
+
+.navbar-left {
+  float: left;
+}
+
+.navbar-right {
+  float: right;
+}
+
+#navbar-menu .menu-github {
+  display: none;
+}
+
+#toolbar-run {
+  margin-left: 0;
+}
+
+/* Responsive playground */
+@media (max-width: 767px) {
+  #editor {
+    right: 0;
+  }
+}

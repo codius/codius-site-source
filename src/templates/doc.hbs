@@ -1,20 +1,40 @@
 {{#extend "default"}}
+  {{#append "styles"}}
+  <link rel="stylesheet" type="text/css" href="{{asset "css/docs.css"}}" />
+  {{/append}}
+
   <div class="container">
     <div class="row">
-      <div class="col-md-9" role="main">
-        {{{body}}}
-      </div>
-      <div class="col-md-3">
-        <div class="list-group hidden-print hidden-xs hidden-sm" role="complementary">
-          <ul class="nav">
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Getting Started</a>
-              <ul class="nav">
-                <li><a href="#">Overview</a></li>
+      <div class="col-sm-3">
+        <div class="docs-sidebar list-group hidden-print hidden-xs" role="complementary">
+          <ul class="nav nav-stacked fixed">
+            <li><a href="/docs/overview">Overview</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#">What is Codius?</a></li>
+                <li><a href="#">Architecture</a></li>
+                <li><a href="#">For Hosting</a></li>
+                <li><a href="#">For Decentralized Apps</a></li>
+                <li><a href="#">For Contracts</a></li>
+              </ul>
+            </li>
+            <li><a href="/docs/getting-started">Using Codius</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#">Setting up the CLI</a></li>
+                <li><a href="#">Writing a contract</a></li>
+              </ul>
+            </li>
+            <li><a href="/docs/getting-started">Running a host</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#">Should I run a host?</a></li>
+                <li><a href="#">Setup</a></li>
+                <li><a href="#">FAQ</a></li>
               </ul>
             </li>
           </ul>
         </div>
+      </div>
+      <div class="col-sm-9" role="main">
+        {{{body}}}
       </div>
     </div>
   </div>

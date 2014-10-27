@@ -2,7 +2,7 @@
 <header class="main-header">
 {{/block}}
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="{{#block "header-container-class"}}container{{/block}}">
       <div class="navbar-header collapsed">
         <button type="button" class="navbar-toggle">
           <span class="icon-bar"></span>
@@ -11,11 +11,16 @@
           <span class="sr-only">Toggle navigation</span>
         </button>
         <i id="navbar-logo" class="icon-logo navbar-brand"></i>
-        <a id="navbar-brand" class="navbar-brand">Codius <span>{{file.section}}{{#if @blog}}Blog{{/if}}</span></a>
+        <a id="navbar-brand" class="navbar-brand">
+          {{#block "brand-contents"}}
+          Codius <span>{{file.section}}{{#if @blog}}Blog{{/if}}</span>
+          {{/block}}
+        </a>
       </div>
 
+      {{#block "header-menu"}}
       <div class="collapse navbar-collapse" id="navbar-menu">
-        <a href="https://github.com/codius" class="btn btn-default navbar-btn navbar-right"><i class="icon-github"></i>&ensp;Github</a>
+        <a href="https://github.com/codius" class="btn btn-default navbar-btn navbar-right menu-github"><i class="icon-github"></i>&ensp;Github</a>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="/">Home</a></li>
           <li><a href="/docs/">Docs</a></li>
@@ -23,6 +28,7 @@
           <li><a href="/blog/">Blog</a></li>
         </ul>
       </div>
+      {{/block}}
     </div>
   </nav>
   <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>

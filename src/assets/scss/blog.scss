@@ -1,3 +1,5 @@
+@import "codius/colors";
+
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
@@ -5,7 +7,7 @@
     max-width: 710px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
+    border-bottom: $divider-color 1px solid;
     word-break: break-word;
     hyphens: auto;
 }
@@ -17,16 +19,16 @@
     content: "";
     width: 7px;
     height: 7px;
-    border: #E7EEF2 1px solid;
+    border: $divider-color 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
-    background: #FFF;
+    background: $canvas-bg-color;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
+    box-shadow: $canvas-bg-color 0 0 0 5px;
 }
 
 body:not(.post-template) .post-title {
@@ -36,132 +38,6 @@ body:not(.post-template) .post-title {
 .post-title a {
     text-decoration: none;
     color: #3A4145;
-}
-
-.post-excerpt p {
-    margin: 0;
-    font-size: 0.9em;
-    line-height: 1.7em;
-}
-
-.read-more {
-    text-decoration: none;
-}
-
-.post-meta {
-    display: block;
-    margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    color: #9EABB3;
-}
-
-.author-thumb {
-    width: 24px;
-    height: 24px;
-    float: left;
-    margin-right: 9px;
-    border-radius: 100%;
-}
-
-.post-meta a {
-    color: #9EABB3;
-    text-decoration: none;
-}
-
-.post-meta a:hover {
-    text-decoration: underline;
-}
-
-.user-meta {
-    position: relative;
-    padding: 0.3rem 40px 0 100px;
-    min-height: 77px;
-}
-
-.post-date {
-    display: inline-block;
-    margin-left: 8px;
-    padding-left: 12px;
-    border-left: #d5dbde 1px solid;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    white-space: nowrap;
-}
-
-.user-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.user-name {
-    display: block;
-    font-weight: 700;
-}
-
-.user-bio {
-    display: block;
-    max-width: 440px;
-    font-size: 1.4rem;
-    line-height: 1.5em;
-}
-
-.publish-meta {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 4.3rem 0 4rem 0;
-    text-align: right;
-}
-
-.publish-heading {
-    display: block;
-    font-weight: 700;
-}
-
-.publish-date {
-    display: block;
-    font-size: 1.4rem;
-    line-height: 1.5em;
-}/* Every post, on every page, gets this style on its <article> tag */
-.post {
-    position: relative;
-    width: 80%;
-    max-width: 710px;
-    margin: 4rem auto;
-    padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
-    word-break: break-word;
-    hyphens: auto;
-}
-
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
-.post:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #FFF;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
-}
-
-body:not(.post-template) .post-title {
-    font-size: 3.6rem;
-}
-
-.post-title a {
-    text-decoration: none;
 }
 
 .post-excerpt p {
@@ -315,7 +191,7 @@ body:not(.post-template) .post-title {
     position: relative;
     margin: 6rem 0 0 0;
     padding: 6rem 0 0 0;
-    border-top: #ddd 1px solid;
+    border-top: $divider-color 1px solid;
 }
 
 .post-footer h4 {
@@ -396,7 +272,7 @@ body:not(.post-template) .post-title {
     text-align: center;
     line-height: 2.4rem;
     border-radius: 50px;
-    background: #FFF;
+    background: $canvas-bg-color;
     transition: box-shadow 0.5s;
 }
 
@@ -505,16 +381,16 @@ body:not(.post-template) .post-title {
     content: "";
     width: 7px;
     height: 7px;
-    border: #E7EEF2 1px solid;
+    border: $divider-color 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
-    background: #FFF;
+    background: $canvas-bg-color;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
+    box-shadow: $canvas-bg-color 0 0 0 5px;
 }
 
 .author-image {
@@ -533,7 +409,7 @@ body:not(.post-template) .post-title {
     padding: 6px;
     background: #eceff1;
     z-index: 2;
-    box-shadow: #ddd 0 0 0 1px;
+    box-shadow: $divider-color 0 0 0 1px;
 }
 
 .author-image .img {
@@ -672,16 +548,16 @@ body:not(.post-template) .post-title {
     content: "";
     width: 7px;
     height: 7px;
-    border: #E7EEF2 1px solid;
+    border: $divider-color 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
-    background: #FFF;
+    background: $canvas-bg-color;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
+    box-shadow: $canvas-bg-color 0 0 0 5px;
 }
 .extra-pagination .pagination {
     width: auto;

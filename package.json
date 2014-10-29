@@ -4,7 +4,8 @@
   "description": "Codius.org website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
   },
   "repository": {
     "type": "git",
@@ -38,5 +39,8 @@
     "gulp-autoprefixer": "~1.0.1",
     "gulp-ruby-sass": "~0.7.1",
     "express-redirect": "~1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.1"
   }
 }

@@ -97,10 +97,19 @@
   };
 
   $document.ready(function () {
-    $('.drawer ul').html($('.navbar-collapse ul').html());
+    $('#drawer-nav').html($('#nav').html());
+    $('#drawer-subnav').html($('#subnav').html());
     $('.navbar-header').click(function () {
       $(this).toggleClass('collapsed');
       $(document.body).toggleClass('navigating');
+    });
+    $('.canvas').click(function (e) {
+      if ($(document.body).hasClass('navigating')) {
+        $(document.body).removeClass('navigating');
+        $('.navbar-header').addClass('collapsed');
+        e.preventDefault();
+        e.stopPropagation();
+      }
     });
   });
 })(jQuery, 'smartresize');

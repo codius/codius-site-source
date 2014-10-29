@@ -29,7 +29,7 @@ ghost({
   app.use(express.static(__dirname + '/web'));
 
   // Default documentation page
-  app.redirect('/docs', '/docs/setup-cli');
+  app.redirect('/docs', '/docs/using-codius/getting-started');
 
   // Ghost blog
   app.use(ghostServer.config.paths.subdir, ghostServer.rootApp);

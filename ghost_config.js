@@ -67,6 +67,45 @@ config = {
         }
     },
 
+    // ### Development **(default)**
+    fig: {
+        // The url to use when providing links to the site, E.g. in RSS and email.
+        // Change this to your Ghost blogs published URL.
+        url: 'http://localhost:'+process.env.PORT+'/blog',
+
+        // Example mail config
+        // Visit http://support.ghost.org/mail for instructions
+        // ```
+        //  mail: {
+        //      transport: 'SMTP',
+        //      options: {
+        //          service: 'Mailgun',
+        //          auth: {
+        //              user: '', // mailgun username
+        //              pass: ''  // mailgun password
+        //          }
+        //      }
+        //  },
+        // ```
+
+        database: {
+            client: 'sqlite3',
+            connection: {
+                filename: path.join(__dirname, '/content/data/ghost-dev.db')
+            },
+            debug: false
+        },
+        server: {
+            // Host to be passed to node's `net.Server#listen()`
+            host: process.env.HOSTNAME,
+            // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
+            port: process.env.PORT
+        },
+        paths: {
+            contentPath: path.join(__dirname, '/content/')
+        }
+    },
+
     // **Developers only need to edit below here**
 
     // ### Testing

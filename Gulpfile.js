@@ -28,7 +28,7 @@ gulp.task('css', function () {
 
 gulp.task('docs', function () {
   return gulp
-    .src('./src/pages/docs/*.md')
+    .src('./src/pages/docs/**/*.md')
     .pipe(frontMatter())
     .pipe(marked({}))
     .pipe(map(function (file, callback) {

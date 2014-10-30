@@ -1,22 +1,29 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-logo">
-      <a href="#">
+      <a href="/">
         <i class="icon-logo"></i>
         <span>Codius</span>
       </a>
     </div>
     <dl class="footer-nav">
-      <dt class="nav-title">ABOUT</dt>
-      <dd class="nav-item"><a href="#">Example</a></dd>
+      <dt class="nav-title">DOCS</dt>
+      <dd class="nav-item"><a href="/docs/using-codius/getting-started">Getting started</a></dd>
+    </dl>
+    <dl class="footer-nav">
+      <dt class="nav-title">RESOURCES</dt>
+      <dd class="nav-item"><a href="/playground/">Playground</a></dd>
+      <dd class="nav-item"><a href="/blog/">Blog</a></dd>
+      <dd class="nav-item"><a href="https://github.com/codius/">Github</a></dd>
     </dl>
     <dl class="footer-nav">
       <dt class="nav-title">COMMUNITY</dt>
       <dd class="nav-item"><a href="https://gitter.im/codius/codius-chat">Chat</a></dd>
+      <dd class="nav-item"><a href="https://groups.google.com/forum/#!forum/codius/">Mailing list</a></dd>
     </dl>
   </div>
   <div class="footer-copyright text-center">
-    <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
-    <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+    {{#if @blog}}<section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>{{/if}}
+    <section class="copyright">&copy; {{date format="YYYY"}} Codius</section>
   </div>
 </footer>

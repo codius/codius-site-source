@@ -111,5 +111,15 @@
         e.stopPropagation();
       }
     });
+
+    // Hide the navbar when zoomed in on mobile
+    $(window).scroll(function(e) {
+      var ratio = window.innerWidth/document.documentElement.clientWidth;
+      if (ratio < 0.9) {
+        $(document.body).addClass('zoomed');
+      } else {
+        $(document.body).removeClass('zoomed');
+      }
+    });
   });
 })(jQuery, 'smartresize');

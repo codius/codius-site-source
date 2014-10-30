@@ -111,6 +111,10 @@ header.main-header {
   transition: all 0.5s ease;
 }
 
+.navbar-inverse .navbar-nav > li > a > i:after {
+  content: '\2002';
+}
+
 .main-header .navbar .container {
   position: relative;
 }
@@ -124,6 +128,7 @@ header.main-header {
 }
 
 .drawer {
+  display: none;
   position: fixed;
   width: 250px;
   top: 50px;
@@ -131,6 +136,9 @@ header.main-header {
   bottom: 0;
   overflow-y: auto;
   padding-bottom: 50px;
+}
+.navigating .drawer {
+  display: block;
 }
 
 #drawer-nav li {
@@ -146,6 +154,10 @@ header.main-header {
 
 #drawer-nav li > a:hover {
   background-color: #000;
+}
+
+#drawer-nav li > a > i:after {
+  content: '\2002';
 }
 
 #drawer-subnav li {
@@ -321,5 +333,18 @@ footer {
     opacity: 0.5;
     transform: translate3d(265px, 0, 0) scale3d(0.9, 0.9, 1);
     box-shadow: 0 0 25px #000;
+  }
+
+
+  // Navbar should disappear when zoomed in
+  .main-header {
+    transition: opacity 1s ease;
+  }
+  .zoomed .canvas {
+    top: 0;
+    padding-top: 50px;
+  }
+  .zoomed .main-header {
+    opacity: 0;
   }
 }

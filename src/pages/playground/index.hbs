@@ -8,8 +8,12 @@ section: playground
 {{#replace "header-container-class"}}
 {{/replace}}
 
+{{#replace "meta-viewport"}}
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+{{/replace}}
+
 {{#replace "brand-contents"}}
-Codius <span>P<span class="hidden-xs">lay</span>g<span class="hidden-xs">round</span></span>
+Codius <span>P<span class="hidden-sm hidden-xs">lay</span>g<span class="hidden-sm hidden-xs">round</span></span>
 {{/replace}}
 
 {{#prepend "header-menu"}}

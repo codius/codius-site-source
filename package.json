@@ -25,20 +25,21 @@
   "homepage": "https://github.com/codius/codius.github.io",
   "dependencies": {
     "express": "^4.9.7",
+    "express-redirect": "~1.1.1",
     "extend": "~2.0.0",
     "ghost": "^0.5.2",
     "gulp": "~3.8.8",
+    "gulp-autoprefixer": "~1.0.1",
     "gulp-ext-replace": "~0.1.0",
     "gulp-front-matter": "~1.0.0",
     "gulp-hb": "~0.1.5",
     "gulp-marked": "~1.0.0",
+    "gulp-ruby-sass": "~0.7.1",
+    "gulp-sass": "~1.2.0",
     "gulp-wrap": "~0.3.0",
     "handlebars": "~2.0.0",
     "map-stream": "~0.1.0",
-    "gulp-sass": "~1.2.0",
-    "gulp-autoprefixer": "~1.0.1",
-    "gulp-ruby-sass": "~0.7.1",
-    "express-redirect": "~1.1.1"
+    "moment": "^2.8.3"
   },
   "devDependencies": {
     "nodemon": "^1.2.1"

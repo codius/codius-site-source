@@ -8,45 +8,58 @@ header.main-header {
 .main-header .navbar #navbar-brand {
   transition: all 0.5s ease;
 }
+
 .near-top .main-header .navbar {
-  padding-top: 25px;
   background: transparent;
 }
 
 .near-top .main-header .navbar #navbar-logo {
   background-color: transparent;
 }
-.near-top .main-header .navbar #navbar-brand {
-  padding-left: 0;
+@media (min-width: 767px) {
+  .near-top .main-header .navbar {
+    padding-top: 25px;
+    background: transparent;
+  }
+
+  .near-top .main-header .navbar #navbar-brand {
+    padding-left: 0;
+  }
+
+  .near-top .main-header .navbar-nav > li > a {
+    color: #fff;
+  }
+
+  .near-top .main-header .navbar-nav > li > a:hover {
+    background-color: #333;
+  }
+
+  .near-top .main-header a.btn {
+    color: #fff;
+    border-color: #fff !important;
+  }
+
+  .near-top .main-header a.btn:hover {
+    background-color: #333;
+  }
+
+  .drawer {
+    transition: all 0.5s ease;
+  }
+
+  .near-top .drawer {
+    padding-top: 25px;
+  }
 }
 
-.near-top .main-header .navbar-nav > li > a {
-  color: #fff;
-}
 
-.near-top .main-header .navbar-nav > li > a:hover {
-  background-color: #333;
-}
-
-.near-top .main-header a.btn {
-  color: #fff;
-  border-color: #fff !important;
-}
-
-.near-top .main-header a.btn:hover {
-  background-color: #333;
-}
-
-.drawer {
-  transition: all 0.5s ease;
-}
-
-.near-top .drawer {
-  padding-top: 25px;
-}
+$hero-perspective: 100px;
+$hero-anim-perspective: 0.5;
+$hero-headline-perspective: 0.2;
+$hero-actions-perspective: 0.2;
 
 .hero {
-  padding: 5em 3em 3em;
+  height: 700px;
   color: #fff;
   background-color: #333;
   background:
@@ -67,18 +80,47 @@ header.main-header {
 
   background-blend-mode: screen;
   margin-bottom: 2em;
+  perspective: $hero-perspective;
+  perspective-origin: 50% 0;
+  overflow: hidden;
 }
 
 .hero h1 {
+  position: absolute;
+  top: 70px / $hero-headline-perspective;
+  left: 0;
+  right: 0;
   font-weight: 100;
   font-size: 3rem;
+  transform: translateZ($hero-perspective * $hero-headline-perspective) scale3d(1 - $hero-headline-perspective, 1 - $hero-headline-perspective,1);
 }
 
-.animation {
+.hero .actions {
+  position: absolute;
+  top: 90px / $hero-actions-perspective;
+  left: 0;
+  right: 0;
+  transform: translateZ($hero-perspective * $hero-actions-perspective) scale3d(1 - $hero-actions-perspective, 1 - $hero-actions-perspective,1);
+}
+
+.hero .floating-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-size: 8em;
+  color: #fff;
+}
+
+.hero .animation {
+  position: absolute;
+  top: 30px / $hero-anim-perspective;
+  left: 0;
+  right: 0;
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateZ($hero-perspective * $hero-anim-perspective) scale3d(1 - $hero-anim-perspective, 1 - $hero-anim-perspective,1);
 }
 
 .logo-anim-bg, .logo-anim-ripple {

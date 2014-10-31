@@ -52,11 +52,10 @@ header.main-header {
   }
 }
 
-
-$hero-perspective: 100px;
-$hero-anim-perspective: 0.5;
-$hero-headline-perspective: 0.2;
-$hero-actions-perspective: 0.2;
+// TODO: There is a scrollbar without this, why?
+.canvas {
+  overflow-x: hidden;
+}
 
 .hero {
   height: 700px;
@@ -77,50 +76,50 @@ $hero-actions-perspective: 0.2;
       #ff5722,
       #000
     );
-
   background-blend-mode: screen;
+
   margin-bottom: 2em;
-  perspective: $hero-perspective;
-  perspective-origin: 50% 0;
   overflow: hidden;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 70px / $hero-headline-perspective;
-  left: 0;
-  right: 0;
-  font-weight: 100;
-  font-size: 3rem;
-  transform: translateZ($hero-perspective * $hero-headline-perspective) scale3d(1 - $hero-headline-perspective, 1 - $hero-headline-perspective,1);
-}
-
-.hero .actions {
-  position: absolute;
-  top: 90px / $hero-actions-perspective;
-  left: 0;
-  right: 0;
-  transform: translateZ($hero-perspective * $hero-actions-perspective) scale3d(1 - $hero-actions-perspective, 1 - $hero-actions-perspective,1);
-}
-
-.hero .floating-logo {
+.hero .scene {
   position: absolute;
   top: 0;
   left: 50%;
+}
+
+.hero h1 {
+  position: relative;
+  top: 400px;
+  left: -50%;
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+.hero .actions p {
+  position: relative;
+  top: 500px;
+  left: -50%;
+}
+
+.hero .floating-logo {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 0;
+  text-align: center;
   font-size: 8em;
   color: #fff;
 }
 
 .hero .animation {
-  position: absolute;
-  top: 30px / $hero-anim-perspective;
-  left: 0;
-  right: 0;
+  position: relative;
+  top: 200px;
+  left: -50%;
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateZ($hero-perspective * $hero-anim-perspective) scale3d(1 - $hero-anim-perspective, 1 - $hero-anim-perspective,1);
 }
 
 .logo-anim-bg, .logo-anim-ripple {

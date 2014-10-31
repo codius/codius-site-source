@@ -3,83 +3,77 @@ jQuery(function($) {
     {
       "x":52,
       "y":467,
-      "z":0.57,
-      "scale":0.8400000000000001
+      "z":0.57
     },
     {
       "x":203,
       "y":84,
-      "z":0.12000000000000001,
-      "scale":0.59
+      "z":0.12
     },
     {
       "x":257,
       "y":425,
-      "z":0.71,
-      "scale":0.7
+      "z":0.71
     },
     {
-      "x":-234,
+      "x":-310,
       "y":216,
-      "z":0.64,
-      "scale":0.62
-    },
-    {
-      "x":-360,
-      "y":294,
-      "z":0.19,
-      "scale":0.54
+      "z":0.74
     },
     {
       "x":-215,
-      "y":493,
-      "z":0.31,
-      "scale":0.9
+      "y":293,
+      "z":0.31
     },
     {
       "x":-137,
-      "y":0,
-      "z":0.42000000000000004,
-      "scale":0.94
+      "y":60,
+      "z":0.42
     },
     {
-      "x":19,
+      "x":-219,
       "y":451,
-      "z":0.48,
-      "scale":0.97
+      "z":0.48
     },
     {
       "x":224,
       "y":292,
-      "z":0.76,
-      "scale":0.75
+      "z":0.76
     },
     {
       "x":-227,
-      "y":40,
-      "z":0.55,
-      "scale":0.79
+      "y":90,
+      "z":0.55
     },
     {
       "x":201,
-      "y":246,
-      "z":0.4,
-      "scale":0.77
+      "y":146,
+      "z":0.4
     }
   ];
   var perspective = 100;
 
   // Render hero
   function createFloatingLogos() {
-    var hero = $('.hero');
+    var hero = $('.hero .scene');
     logos.forEach(function (i) {
-      var logo = $('<div class="floating-logo icon-logo"></div>');
-      logo.css('transform', 'translate3d('+i.x+'px,'+i.y+'px,'+i.z*perspective+'px) scale3d(0.25, 0.25, 1)');
-      logo.css('opacity', i.z*0.5);
-      logo.css('filter', 'blur(100px)');
+      var dof = Math.round(Math.pow(i.z - 0.2, 2) * 40);
+      var size = Math.round(i.z * i.z * 16);
+      var container = $('<div class="layer"><div class="floating-logo icon-logo"></div></div>');
+      container.attr('data-depth', i.z);
+      var logo = container.find('div');
+      logo.css('top', i.y*1.2+'px');
+      logo.css('left', i.x*2+'px');
+      logo.css('font-size', size+'em');
+      logo.css('webkitFilter', 'blur('+dof+'px)');
+      logo.css('mozFilter', 'blur('+dof+'px)');
+      logo.css('oFilter', 'blur('+dof+'px)');
+      logo.css('msFilter', 'blur('+dof+'px)');
+      logo.css('filter', 'blur('+dof+'px)');
       logo.attr('data-settings', JSON.stringify(i));
-      logo.appendTo(hero);
+      container.appendTo(hero);
     });
+    hero.parallax();
   }
   createFloatingLogos();
 
@@ -93,8 +87,8 @@ jQuery(function($) {
       $(document.body).addClass("near-top");
     }
 
-    $('.hero').css('webkitPerspectiveOrigin',
-       "50% " + scroll + "px");
+    $('.hero').css('perspectiveOrigin',
+       "50% " + (scroll-300) + "px");
   };
   $(window).scroll(updateScroll);
   $('.canvas').scroll(updateScroll);

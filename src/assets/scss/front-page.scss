@@ -1,3 +1,5 @@
+@import "codius/colors";
+
 header.main-header {
   height: 0;
 }
@@ -77,8 +79,6 @@ header.main-header {
       #000
     );
   background-blend-mode: screen;
-
-  margin-bottom: 2em;
   overflow: hidden;
 }
 
@@ -155,6 +155,13 @@ header.main-header {
 }
 .logo-anim-dotted > circle:nth-child(5) {
   animation-delay: 1.4s;
+}
+
+.hero-bgfix {
+  position: relative;
+  padding-top: 2em;
+  background-color: $canvas-bg-color;
+  z-index: 1;
 }
 
 @keyframes kaboom {

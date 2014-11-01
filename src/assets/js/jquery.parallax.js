@@ -428,11 +428,12 @@
     }
     this.vx += (this.mx - this.vx) * this.frictionX;
     this.vy += (this.my - this.vy) * this.frictionY;
+    var scroll = $(window).scrollTop();
     for (var i = 0, l = this.$layers.length; i < l; i++) {
       var depth = this.depths[i];
       var layer = this.$layers[i];
       var xOffset = this.vx * depth * (this.invertX ? -1 : 1);
-      var yOffset = this.vy * depth * (this.invertY ? -1 : 1);
+      var yOffset = this.vy * depth * (this.invertY ? -1 : 1) - (depth * scroll);
       this.setPosition(layer, xOffset, yOffset);
     }
     this.raf = requestAnimationFrame(this.onAnimationFrame);

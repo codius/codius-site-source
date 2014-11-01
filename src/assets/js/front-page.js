@@ -62,7 +62,7 @@ jQuery(function($) {
       var container = $('<div class="layer"><div class="floating-logo icon-logo"></div></div>');
       container.attr('data-depth', i.z);
       var logo = container.find('div');
-      logo.css('top', i.y*1.2+'px');
+      logo.css('top', i.y*2+'px');
       logo.css('left', i.x*2+'px');
       logo.css('font-size', size+'em');
       logo.css('webkitFilter', 'blur('+dof+'px)');

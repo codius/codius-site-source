@@ -14,3 +14,4 @@ web/
 /content/themes/**/*
 /content/images/**/*
 !/content/themes/casper/**
+.elasticbeanstalk/

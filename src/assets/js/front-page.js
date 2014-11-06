@@ -70,6 +70,7 @@ jQuery(function($) {
       logo.css('oFilter', 'blur('+dof+'px)');
       logo.css('msFilter', 'blur('+dof+'px)');
       logo.css('filter', 'blur('+dof+'px)');
+      logo.css('opacity', 1-i.z);
       logo.attr('data-settings', JSON.stringify(i));
       container.appendTo(hero);
     });

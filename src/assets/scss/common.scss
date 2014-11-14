@@ -339,11 +339,9 @@ footer {
   // Navbar should disappear when zoomed in
   .main-header {
     transition: opacity 1s ease;
+    // transform: translateZ(0);
   }
-  .zoomed .canvas {
-    top: 0;
-    padding-top: 50px;
-  }
+
   .zoomed .main-header {
     opacity: 0;
   }

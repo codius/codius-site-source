@@ -9,6 +9,7 @@ header.main-header {
 .main-header .navbar #navbar-logo,
 .main-header .navbar #navbar-brand {
   transition: all 0.5s ease;
+  transform: translateZ(0);
 }
 
 .near-top .main-header .navbar {
@@ -50,7 +51,7 @@ header.main-header {
   }
 
   .near-top .drawer {
-    padding-top: 25px;
+    // padding-top: 25px;
   }
 }
 
@@ -65,17 +66,17 @@ header.main-header {
   background-color: #333;
   background:
     linear-gradient(
-      #4a148c,
+      #3B8686,
       transparent
     ),
     linear-gradient(
       90deg,
-      #1a237e,
+      #0B486B,
       transparent
     ),
     linear-gradient(
       -90deg,
-      #ff5722,
+      #79BD9A,
       #000
     );
   background-blend-mode: screen;
@@ -90,35 +91,69 @@ header.main-header {
 
 .hero h1 {
   position: relative;
-  top: 400px;
+  top: 100px;
   left: -50%;
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 
-.hero h1 span {
+.hero h2 {
+  position: relative;
+  top: 100px;
+  left: -50%;
+  font-weight: 100;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.hero h2 span {
   animation: fadein 1s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
 
-.hero h1 span:nth-child(2) {
-  animation-delay: 1.0s;
+.hero h2 span:nth-child(2) {
+  animation-delay: 0.3s;
+  font-weight: 400;
 }
-.hero h1 span:nth-child(3) {
-  animation-delay: 1.1s;
+.hero h2 span:nth-child(3) {
+  animation-delay: 0.6s;
 }
-.hero h1 span:nth-child(4) {
-  animation-delay: 1.2s;
-}
-.hero h1 span:nth-child(5) {
-  animation-delay: 1.3s;
+.hero h2 span:nth-child(4) {
+  animation-delay: 0.9s;
 }
 
 .hero .actions p {
   position: relative;
-  top: 500px;
+  top: 250px;
   left: -50%;
+}
+
+.hero .actions p .btn {
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.hero .actions p .btn.btn-primary {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero .actions p .btn.btn-primary:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero .actions p .btn.btn-default {
+  background: transparent;
+  color: #fff;
+  border: 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero .actions p .btn.btn-default:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero .floating-logo {
@@ -133,7 +168,7 @@ header.main-header {
 
 .hero .animation {
   position: relative;
-  top: 200px;
+  top: 150px;
   left: -50%;
   height: 200px;
   display: flex;
@@ -219,7 +254,11 @@ header.main-header {
 }
 
 @media (max-width: 767px) {
-  .near-top .canvas {
+  .canvas {
     top: 0;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
   }
 }

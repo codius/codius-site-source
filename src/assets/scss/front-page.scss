@@ -61,7 +61,8 @@ header.main-header {
 }
 
 .hero {
-  height: 700px;
+  height: 640px;
+  padding-top: 150px;
   color: #fff;
   background-color: #333;
   background:
@@ -80,28 +81,23 @@ header.main-header {
       #000
     );
   background-blend-mode: screen;
-  overflow: hidden;
 }
 
-.hero .scene {
-  position: absolute;
-  top: 0;
-  left: 50%;
+.hero .animation {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero h1 {
-  position: relative;
-  top: 100px;
-  left: -50%;
   font-weight: 100;
   font-size: 4rem;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .hero h2 {
-  position: relative;
-  top: 100px;
-  left: -50%;
   font-weight: 100;
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -125,9 +121,7 @@ header.main-header {
 }
 
 .hero .actions p {
-  position: relative;
-  top: 250px;
-  left: -50%;
+  margin-top: 110px;
 }
 
 .hero .actions p .btn {
@@ -157,23 +151,10 @@ header.main-header {
 }
 
 .hero .floating-logo {
-  position: relative;
-  top: 0;
-  left: 0;
   width: 0;
   text-align: center;
   font-size: 8em;
   color: #fff;
-}
-
-.hero .animation {
-  position: relative;
-  top: 150px;
-  left: -50%;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .logo-anim-bg, .logo-anim-ripple {

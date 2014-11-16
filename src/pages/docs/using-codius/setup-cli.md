@@ -49,7 +49,7 @@ sudo ln -s /usr/bin/nodejs /usr/local/bin/node
 Alright, now we're ready to install Codius. Go ahead and run:
 
 ``` bash
-sudo npm install -g codius-cli
+sudo npm install -g codius
 ```
 
 ## Verification

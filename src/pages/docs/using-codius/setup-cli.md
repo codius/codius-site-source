@@ -41,7 +41,7 @@ sudo apt-get install nodejs npm
 
 # Debian package maintainers thought it was a good idea to rename the
 # executable, so we need to create a symlink for the correct name.
-sudo ln -s /usr/bin/nodejs /usr/bin/local/node
+sudo ln -s /usr/bin/nodejs /usr/local/bin/node
 ```
 
 ## Installation

@@ -39,7 +39,7 @@ On Ubuntu, you can install Node.js simply by:
 ``` bash
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
-sudo apt-get install nodejs npm
+sudo apt-get install nodejs
 
 # Debian package maintainers thought it was a good idea to rename the
 # executable, so we need to create a symlink for the correct name.

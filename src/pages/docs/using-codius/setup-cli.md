@@ -37,6 +37,8 @@ Next, you need a recent version of [Node.js](https://nodejs.org). All versions o
 On Ubuntu, you can install Node.js simply by:
 
 ``` bash
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
 sudo apt-get install nodejs npm
 
 # Debian package maintainers thought it was a good idea to rename the

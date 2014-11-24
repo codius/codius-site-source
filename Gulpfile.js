@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var include = require('gulp-include');
 var frontMatter = require('gulp-front-matter');
 var hb = require('gulp-hb');
 var marked = require('gulp-marked');
@@ -12,7 +13,20 @@ var path = require('path');
 
 gulp.task('assets', function () {
   return gulp
-    .src('./src/assets/{fonts,css,js,img}/**/*', {base: './src/assets'})
+    .src('./src/assets/{fonts,css,img}/**/*', {base: './src/assets'})
+    .pipe(gulp.dest('./web/assets'));
+});
+
+gulp.task('favicon', function () {
+  return gulp
+    .src('./src/assets/img/favicon.ico')
+    .pipe(gulp.dest('./web'));
+});
+
+gulp.task('js', function () {
+  return gulp
+    .src('./src/assets/js/**/*', {base: './src/assets'})
+    .pipe(include())
     .pipe(gulp.dest('./web/assets'));
 });
 
@@ -89,4 +103,4 @@ gulp.task('web', function () {
 gulp.task('watch', function() {
   gulp.watch('src/**/*', ['default']);
 });
-gulp.task('default', ['assets', 'css', 'docs', 'web']);
+gulp.task('default', ['assets', 'favicon', 'js', 'css', 'docs', 'web']);

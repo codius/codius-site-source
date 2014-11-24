@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codius/codius.github.io"
+    "url": "https://github.com/codius/codius.org"
   },
   "keywords": [
     "codius",
@@ -20,11 +20,12 @@
   "author": "Codius Team <info@codius.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codius/codius.github.io/issues"
+    "url": "https://github.com/codius/codius.org/issues"
   },
-  "homepage": "https://github.com/codius/codius.github.io",
+  "homepage": "https://github.com/codius/codius.org",
   "dependencies": {
     "express": "^4.9.7",
+    "express-handlebars": "^1.1.0",
     "express-redirect": "~1.1.1",
     "extend": "~2.0.0",
     "ghost": "^0.5.2",
@@ -33,6 +34,7 @@
     "gulp-ext-replace": "~0.1.0",
     "gulp-front-matter": "~1.0.0",
     "gulp-hb": "~0.1.5",
+    "gulp-include": "^1.1.0",
     "gulp-marked": "~1.0.0",
     "gulp-ruby-sass": "~0.7.1",
     "gulp-sass": "~1.2.0",

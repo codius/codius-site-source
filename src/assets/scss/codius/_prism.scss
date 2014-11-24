@@ -1,35 +1,5 @@
 // @import "compass/css3";
-
-/**
- * prism.js Monokai theme for CSS & Sass/Scss
- *
- * @todo test for JavaScript & HTML
- *
- * @author @MoOx
- */
-
-$prism-font-family: 	"source-code-pro", monospace	!default;
-$prism-font-size: 		13px !default;
-$prism-padding: 		15px !default;
-$prism-line-height:		18px !default;
-$prism-border-radius: 	4px !default;
-$prism-border: 			1px solid #e1e1e8 !default;
-$prism-background: 		#2a2a2a !default;
-$prism-color: 			#76d9e6 !default;
-$prism-color-neutral:	#bebec5 !default;
-$prism-text-shadow: 	none !default;
-
-$prism-color-comment:		#6f705e	!default;
-$prism-color-keyword:		lighten(#ee2870, 4%)	!default; // lighten a bit otherwise the text looks too weak.
-$prism-color-value:			#76d9e6	!default;
-$prism-color-string:		#e6d06c	!default;
-$prism-color-name:			#e6d06c	!default;
-$prism-color-number:		#a77afe	!default;
-$prism-color-variable:		#fff	!default;
-$prism-color-selector:		#a6e22d	!default;
-$prism-color-punctuation:	$prism-color-neutral !default;
-//$prism-color-funtion:	#dc322f	!default;
-
+@import "codius/colors";
 
 code[class*="language-"],
 pre[class*="language-"] {

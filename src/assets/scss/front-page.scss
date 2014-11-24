@@ -199,6 +199,63 @@ header.main-header {
   z-index: 1;
 }
 
+.hostcount-logo {
+  text-align: center;
+  word-wrap: break-word;
+  letter-spacing: 0.3em;
+  max-width: 400px;
+  line-height: 1.5;
+  height: 125px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  align-content: center;
+  font-size: 96px;
+
+  // Not sure if this makes a different, but lets use a native font for better
+  // performance
+  font-family: sans-serif;
+}
+
+.hostcount-logo i {
+  line-height: 1.5;
+}
+
+pre {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+
+  // whitespace management
+  white-space: pre; // fallback
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+
+  // theme
+  font-family: $prism-font-family;
+  font-size: 	$prism-font-size;
+  line-height: $prism-line-height;
+
+  color: $prism-color;
+  text-shadow: $prism-text-shadow;
+
+  background: $prism-background;
+  padding: $prism-padding;
+  border-radius: $prism-border-radius;
+  border: $prism-border;
+}
+
+.hostcount-pre {
+  margin-top: 1em;
+}
+
 @keyframes kaboom {
   0% {
     transform: scale(1.7);

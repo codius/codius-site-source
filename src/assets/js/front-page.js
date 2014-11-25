@@ -5,7 +5,7 @@
 //= require ../../../bower_components/rangeslider.js/dist/rangeslider.js
 
 jQuery(function($) {
-  var controller = new ScrollMagic();
+  // var controller = new ScrollMagic();
 
   // Cache windowHeight
   var windowHeight = $(window).innerHeight();
@@ -46,18 +46,18 @@ jQuery(function($) {
   updateScroll();
 
   // HTML5 rangeslider polyfill
-  $('input[type="range"]').rangeslider({
-    // Feature detection the default is `true`.
-    // Set this to `false` if you want to use
-    // the polyfill also in Browsers which support
-    // the native <input type="range"> element.
-    polyfill: false,
-
-    // Default CSS classes
-    rangeClass: 'rangeslider',
-    fillClass: 'rangeslider__fill',
-    handleClass: 'rangeslider__handle'
-  });
+  // $('input[type="range"]').rangeslider({
+  //   // Feature detection the default is `true`.
+  //   // Set this to `false` if you want to use
+  //   // the polyfill also in Browsers which support
+  //   // the native <input type="range"> element.
+  //   polyfill: false,
+  //
+  //   // Default CSS classes
+  //   rangeClass: 'rangeslider',
+  //   fillClass: 'rangeslider__fill',
+  //   handleClass: 'rangeslider__handle'
+  // });
 
   $('.hostcount-slide').on('change', function(evt) {
     var value = evt.target.value,

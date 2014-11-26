@@ -11,7 +11,7 @@ Codius has four major components:
 * [Host](http://github.com/codius/codius-host)
 * [CLI](http://github.com/codius/codius-cli)
 
-All of them can be installed at once via ``npm install codius-cli``.
+All of them can be installed at once via ``npm install codius``.
 
 # Minimum Requirements
 

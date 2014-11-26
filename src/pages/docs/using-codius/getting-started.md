@@ -21,4 +21,4 @@ Codius has a minimal set of external dependencies to be built and installed:
 * Linux kernel newer than 2.6.31
 * libseccomp
 
-Once codius is installed, you can start with [Setting up the CLI](setup-cli)
+Once Codius is installed, you can start with [Setting up the CLI](setup-cli)

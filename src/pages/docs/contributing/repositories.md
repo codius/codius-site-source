@@ -5,7 +5,7 @@ section: docs
 # Codius Repositories
 
 Third-party patches are a great way to contribute to Codius. We simply can't
-access the huge number of platforms and configurations that codius runs in. Our
+access the huge number of platforms and configurations that Codius runs in. Our
 goal is to keep it as easy as possible to contribute changes that get things
 working in your environment. There are a few guidelines that we need
 contributors to follow so that we can have a chance of keeping on top of things.
@@ -13,7 +13,7 @@ contributors to follow so that we can have a chance of keeping on top of things.
 
 ## Getting Started
 
-Codius is organized into three major repositories:
+Codius is organized into four major repositories:
 
 * [Sandbox](http://github.com/codius/codius-sandbox)
 * [Engine](http://github.com/codius/codius-engine)
@@ -38,7 +38,7 @@ Codius is organized into three major repositories:
 
 ## Submitting Changes
 * Push your changes to a topic branch in your fork of the repository
-* Submit a pull request to the repository in the codius organization
+* Submit a pull request to the repository in the Codius organization
 * The team looks at pull requests on a regular basis
 * After feedback is given, we expect responses within two weeks. After two weeks
   we may close the pull request if it isn't showing any activity.

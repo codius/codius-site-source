@@ -13,5 +13,5 @@ of a contract is fairly straightforward:
 
 Codius has a number of example contracts available:
 
-* [Hello, World](http://github.com/codius/example-helloworld)
-* [Webserver](http://github.com/codius/example-webserver)
+* [Hello, World](https://github.com/codius/example-helloworld)
+* [Webserver](https://github.com/codius/example-webserver)

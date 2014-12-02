@@ -16,3 +16,8 @@ web/
 /content/images/**/*
 !/content/themes/casper/**
 .elasticbeanstalk/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

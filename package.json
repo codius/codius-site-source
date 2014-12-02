@@ -41,7 +41,8 @@
     "gulp-wrap": "~0.3.0",
     "handlebars": "~2.0.0",
     "map-stream": "~0.1.0",
-    "moment": "^2.8.3"
+    "moment": "^2.8.3",
+    "pg.js": "^3.6.2"
   },
   "devDependencies": {
     "nodemon": "^1.2.1"

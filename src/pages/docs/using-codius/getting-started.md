@@ -6,10 +6,10 @@ section: docs
 
 Codius has four major components:
 
-* [Sandbox](http://github.com/codius/codius-sandbox)
-* [Engine](http://github.com/codius/codius-engine)
-* [Host](http://github.com/codius/codius-host)
-* [CLI](http://github.com/codius/codius-cli)
+* [Sandbox](https://github.com/codius/codius-sandbox)
+* [Engine](https://github.com/codius/codius-engine)
+* [Host](https://github.com/codius/codius-host)
+* [CLI](https://github.com/codius/codius-cli)
 
 All of them can be installed at once via ``npm install codius-cli``.
 

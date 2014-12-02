@@ -15,10 +15,10 @@ contributors to follow so that we can have a chance of keeping on top of things.
 
 Codius is organized into four major repositories:
 
-* [Sandbox](http://github.com/codius/codius-sandbox)
-* [Engine](http://github.com/codius/codius-engine)
-* [Host](http://github.com/codius/codius-host)
-* [CLI](http://github.com/codius/codius-cli)
+* [Sandbox](https://github.com/codius/codius-sandbox)
+* [Engine](https://github.com/codius/codius-engine)
+* [Host](https://github.com/codius/codius-host)
+* [CLI](https://github.com/codius/codius-cli)
 
 ## Making Changes
 
@@ -45,5 +45,5 @@ Codius is organized into four major repositories:
 
 ## Additional Resources
 
-* [General GitHub documentation](http://help.github.com)
-* [GitHub pull request documentation](http://help.github.com/send-pull-requests)
+* [General GitHub documentation](https://help.github.com)
+* [GitHub pull request documentation](https://help.github.com/send-pull-requests)

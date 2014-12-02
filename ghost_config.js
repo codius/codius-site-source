@@ -106,6 +106,50 @@ config = {
         }
     },
 
+    // ### AWS deployment (Elastic Beanstalk)
+    aws: {
+        // The url to use when providing links to the site, E.g. in RSS and email.
+        // Change this to your Ghost blogs published URL.
+        url: 'http://localhost:'+process.env.PORT+'/blog',
+
+        // Example mail config
+        // Visit http://support.ghost.org/mail for instructions
+        // ```
+        //  mail: {
+        //      transport: 'SMTP',
+        //      options: {
+        //          service: 'Mailgun',
+        //          auth: {
+        //              user: '', // mailgun username
+        //              pass: ''  // mailgun password
+        //          }
+        //      }
+        //  },
+        // ```
+
+        database: {
+            client: 'pg',
+            connection: {
+                host     : process.env.RDS_HOSTNAME,
+                port     : process.env.RDS_PORT,
+                user     : process.env.RDS_USERNAME,
+                password : process.env.RDS_PASSWORD,
+                database : process.env.RDS_DB_NAME,
+                charset  : 'utf8'
+            },
+            debug: false
+        },
+        server: {
+            // Host to be passed to node's `net.Server#listen()`
+            host: process.env.HOSTNAME,
+            // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
+            port: process.env.PORT
+        },
+        paths: {
+            contentPath: path.join(__dirname, '/content/')
+        }
+    },
+
     // **Developers only need to edit below here**
 
     // ### Testing

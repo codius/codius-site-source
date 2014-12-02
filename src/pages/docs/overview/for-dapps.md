@@ -11,4 +11,5 @@ If we want to create secure, distributed applications that can interact with dif
 
 Codius is the application layer for the decentralized web. Programs running on Codius can interact with one another, as well as distributed databases such as Ripple and Bitcoin and all other web services and APIs.
 
-![Codius 3-Tier Architecture](/assets/img/docs/three-tier-architecture.png)
+![Codius 3-Tier Architecture](/src/assets/img/docs/three-tier-architecture.png)
+

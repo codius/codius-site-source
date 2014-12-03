@@ -23,8 +23,17 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-file:before {
+	content: "\e610";
+}
+.icon-home:before {
+	content: "\e60e";
+}
 .icon-logo:before {
 	content: "\e600";
+}
+.icon-quill:before {
+	content: "\e60f";
 }
 .icon-connection:before {
 	content: "\e602";

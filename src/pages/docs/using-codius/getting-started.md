@@ -1,4 +1,5 @@
 ---
+title: Getting Started with Codius
 section: docs
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: Who Should Run a Host?
 section: docs
 ---
 # Who should run a host?

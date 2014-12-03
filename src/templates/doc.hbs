@@ -1,4 +1,8 @@
 {{#extend "default"}}
+  {{#replace "title"}}
+  <title>{{file.title}} - Codius Docs</title>
+  {{/replace}}
+
   {{#append "styles"}}
   <link rel="stylesheet" type="text/css" href="{{asset "css/docs.css"}}" />
   {{/append}}

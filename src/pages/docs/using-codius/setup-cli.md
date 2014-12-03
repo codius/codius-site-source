@@ -1,4 +1,5 @@
 ---
+title: Setting Up Codius CLI
 section: docs
 ---
 # Setting up Codius CLI

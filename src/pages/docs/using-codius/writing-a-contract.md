@@ -1,4 +1,5 @@
 ---
+title: Writing a Codius Contract
 section: docs
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: Running the Examples
 section: docs
 ---
 

@@ -1,4 +1,5 @@
 ---
+title: Setting Up a Codius Host
 section: docs
 ---
 # Setting up a Codius host

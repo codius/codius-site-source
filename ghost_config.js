@@ -150,50 +150,6 @@ config = {
         }
     },
 
-    // ### Development **(default)**
-    awsremote: {
-        // The url to use when providing links to the site, E.g. in RSS and email.
-        // Change this to your Ghost blogs published URL.
-        url: 'http://localhost:2368/blog',
-
-        // Example mail config
-        // Visit http://support.ghost.org/mail for instructions
-        // ```
-        //  mail: {
-        //      transport: 'SMTP',
-        //      options: {
-        //          service: 'Mailgun',
-        //          auth: {
-        //              user: '', // mailgun username
-        //              pass: ''  // mailgun password
-        //          }
-        //      }
-        //  },
-        // ```
-
-        database: {
-            client: 'pg',
-            connection: {
-                host     : "aa1l2fqg6jycb51.crfowkq8y0z9.us-west-1.rds.amazonaws.com",
-                port     : 5432,
-                user     : "stefan",
-                password : "TpmVX7XdmClYteP23CNd",
-                database : "ebdb",
-                charset  : 'utf8'
-            },
-            debug: true
-        },
-        server: {
-            // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
-            // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '2368'
-        },
-        paths: {
-            contentPath: path.join(__dirname, '/content/')
-        }
-    },
-
     // **Developers only need to edit below here**
 
     // ### Testing

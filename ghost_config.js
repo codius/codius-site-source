@@ -110,7 +110,7 @@ config = {
     aws: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         // Change this to your Ghost blogs published URL.
-        url: 'http://codius-dot-org-env-e35sawhmu2.elasticbeanstalk.com/blog',
+        url: 'http://codius.org/blog',
 
         // Example mail config
         // Visit http://support.ghost.org/mail for instructions

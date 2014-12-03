@@ -23,6 +23,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-left:before {
+	content: "\e612";
+}
 .icon-file:before {
 	content: "\e610";
 }
@@ -68,9 +71,15 @@
 .icon-twitter:before {
 	content: "\e60d";
 }
+.icon-feed:before {
+	content: "\e611";
+}
 .icon-github:before {
 	content: "\e601";
 }
 .icon-gauge:before {
 	content: "\e608";
+}
+.icon-stats:before {
+	content: "\e613";
 }

@@ -341,35 +341,33 @@ body:not(.post-template) .post-title {
    6. Author profile
    ========================================================================== */
 
-.post-head.main-header {
-    height: 65%;
-    min-height: 180px;
-}
+.author-head {
+  position: relative;
+  top: 12px;
+  z-index: 1;
+  width: 80%;
+  max-width: 710px;
+  margin: 0 auto;
 
-.no-cover.post-head.main-header {
-    height: 85px;
-    min-height: 0;
-    margin-bottom: 0;
-    background: transparent;
-}
+  .btn {
+    padding: 6px 12px;
+    line-height: 1.42;
+    text-transform: uppercase;
+    font-weight: 300;
 
-.tag-head.main-header {
-    height: 40%;
-    min-height: 180px;
-}
+    i {
+      font-size: 0.8em;
+      padding-right: 0.6em;
+    }
+  }
 
-.author-head.main-header {
-    height: 40%;
-    min-height: 180px;
-}
-
-.no-cover.author-head.main-header {
-    height: 10%;
-    min-height: 100px;
-    background: transparent;
+  .subscribe-button {
+    float: right;
+  }
 }
 
 .author-profile {
+    position: relative;
     padding: 0 15px 5rem 15px;
     border-bottom: #EBF2F6 1px solid;
     text-align: center;
@@ -429,7 +427,7 @@ body:not(.post-template) .post-title {
     width: 120px;
     height: 120px;
     padding: 3px;
-    margin: -100px auto 0 auto;
+    margin: 0 auto;
     box-shadow: none;
 }
 
@@ -452,9 +450,9 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
+    font-style: italic;
 }
 .author-meta span {
     display: inline-block;

@@ -70,7 +70,9 @@ hr {
   border-color: $accent-color-light;
 }
 
-.home-template .navbar .container {
+.home-template .navbar .container,
+.post-template .navbar .container,
+.author-template .navbar .container {
   max-width: 840px;
 }
 

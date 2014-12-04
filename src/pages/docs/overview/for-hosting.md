@@ -9,7 +9,7 @@ As developers today we have countless options for cloud hosting providers. Howev
 
 What if there were a standardized hosting protocol that enables developers to deploy their code to multiple hosts in seconds -- even without a dedicated ops team?
 
-Codius standardizes both execution environment and billing to make it to deploy code to any number of hosts with negligible time and effort.
+Codius standardizes both the execution environment and billing so that deploying code to any number of hosts requires negligible time and effort.
 
 Codius is an open source platform that can be adopted by new and existing hosting providers. It is the next step in the evolutionary chain from bare-metal, to VM-based cloud hosting, to services and tools like Heroku and Docker that reduce the complexity of deploying to varied environments.
 

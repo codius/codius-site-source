@@ -101,16 +101,18 @@
     $('#drawer-subnav').html($('#subnav').html());
     $('.navbar-header').click(function () {
       $(this).toggleClass('collapsed');
-      $(document.body).toggleClass('navigating');
+      $(':root').toggleClass('navigating');
     });
-    $('.canvas').click(function (e) {
-      if ($(document.body).hasClass('navigating')) {
-        $(document.body).removeClass('navigating');
+    function handleMouseEventOnCanvas(e) {
+      if ($(':root').hasClass('navigating')) {
+        $(':root').removeClass('navigating');
         $('.navbar-header').addClass('collapsed');
         e.preventDefault();
         e.stopPropagation();
       }
-    });
+    }
+    $('.canvas').click(handleMouseEventOnCanvas);
+    $('.canvas').on('touchstart', handleMouseEventOnCanvas);
 
     // Hide the navbar when zoomed in on mobile
     $(window).scroll(function(e) {

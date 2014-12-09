@@ -1,8 +1,8 @@
-//= require ../../../bower_components/ScrollMagic/js/_dependent/greensock/TweenMax.min.js
-//= require ../../../bower_components/gsap/src/uncompressed/jquery.gsap.js
-//= require ../../../bower_components/ScrollMagic/js/jquery.scrollmagic.js
-//= require ../../../bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js
-//= require ../../../bower_components/rangeslider.js/dist/rangeslider.js
+///= require ../../../bower_components/ScrollMagic/js/_dependent/greensock/TweenMax.min.js
+///= require ../../../bower_components/gsap/src/uncompressed/jquery.gsap.js
+///= require ../../../bower_components/ScrollMagic/js/jquery.scrollmagic.js
+///= require ../../../bower_components/ScrollMagic/js/jquery.scrollmagic.debug.js
+///= require ../../../bower_components/rangeslider.js/dist/rangeslider.js
 
 jQuery(function($) {
   // var controller = new ScrollMagic();

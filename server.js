@@ -5,12 +5,20 @@ var ghost = require('ghost'),
     redirect = require("express-redirect")
     app = express();
 
+
 // Enable redirect plugin
 redirect(app);
 
 ghost({
   config: path.resolve(__dirname, 'ghost_config.js')
 }).then(function (ghostServer) {
+  var ghostConfig = require('ghost/core/server/config');
+
+  // Enable S3 storage monkey patch (depending on config)
+  if (ghostConfig.storage && ghostConfig.storage === 's3') {
+    require('./src/server/ghost-s3-override');
+  }
+
   // Make .html extension optional
   app.use(function(req, res, next) {
     if (req.path.indexOf('.') === -1) {

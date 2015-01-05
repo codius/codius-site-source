@@ -88,14 +88,13 @@ config = {
         //  },
         // ```
 
-        // storage: 's3',
-        //
-        // aws: {
-        //     accessKeyId: process.env.AWS_ACCESS_KEY_ID || 'AKIAIG2TFYLCWSMW2QTQ',
-        //     secretAccessKey: process.env.AWS_SECRET_KEY || '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',
-        //     bucket: process.env.AWS_S3_BUCKET || 'codius-dot-org-ghost-uploads',
-        //     region: process.env.AWS_S3_REGION || 'us-west-1'
-        // },
+        fileStore: 'ghost-s3-file-store',
+        aws: {
+            accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+            secretAccessKey: process.env.AWS_SECRET_KEY,
+            bucket: process.env.AWS_S3_BUCKET,
+            region: process.env.AWS_S3_REGION
+        },
 
         database: {
             client: 'sqlite3',
@@ -135,6 +134,14 @@ config = {
         //      }
         //  },
         // ```
+
+        fileStore: 'ghost-s3-file-store',
+        aws: {
+            accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+            secretAccessKey: process.env.AWS_SECRET_KEY,
+            bucket: process.env.AWS_S3_BUCKET,
+            region: process.env.AWS_S3_REGION
+        },
 
         database: {
             client: 'pg',

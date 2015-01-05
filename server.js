@@ -14,10 +14,8 @@ ghost({
 }).then(function (ghostServer) {
   var ghostConfig = require('ghost/core/server/config');
 
-  // Enable S3 storage monkey patch (depending on config)
-  if (ghostConfig.storage && ghostConfig.storage === 's3') {
-    require('./src/server/ghost-s3-override');
-  }
+  // Enable S3 storage monkey patch
+  require('./src/server/ghost-s3-override');
 
   // Make .html extension optional
   app.use(function(req, res, next) {

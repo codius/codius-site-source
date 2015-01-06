@@ -88,13 +88,13 @@ config = {
         //  },
         // ```
 
-        fileStore: 'ghost-s3-file-store',
-        aws: {
-            accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-            secretAccessKey: process.env.AWS_SECRET_KEY,
-            bucket: process.env.AWS_S3_BUCKET,
-            region: process.env.AWS_S3_REGION
-        },
+        // fileStore: 'ghost-s3-file-store',
+        // aws: {
+        //     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        //     secretAccessKey: process.env.AWS_SECRET_KEY,
+        //     bucket: process.env.AWS_S3_BUCKET,
+        //     region: process.env.AWS_S3_REGION
+        // },
 
         database: {
             client: 'sqlite3',
@@ -142,6 +142,9 @@ config = {
             bucket: process.env.AWS_S3_BUCKET,
             region: process.env.AWS_S3_REGION
         },
+
+        // Redirect HTTP -> HTTPS behind a proxy (here: Elastic Load Balancer)
+        proxyHttpsRedirect: true,
 
         database: {
             client: 'pg',

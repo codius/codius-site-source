@@ -17,6 +17,10 @@ ghost({
   // Enable S3 storage monkey patch
   require('./src/server/ghost-s3-override');
 
+  if (ghostConfig.proxyHttpsRedirect) {
+    app.use(require('./src/server/proxy-https-redirect'));
+  }
+
   // Make .html extension optional
   app.use(function(req, res, next) {
     if (req.path.indexOf('.') === -1) {

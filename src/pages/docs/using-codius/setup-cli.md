@@ -28,7 +28,7 @@ In case your processor architecture is 64-bit, you have to make sure the 32-bit 
 On Ubuntu, simply run:
 
 ``` bash
-dpkg --add-architecture i386
+sudo dpkg --add-architecture i386
 sudo apt-get install libc6-i386 lib32stdc++6 libseccomp2:i386
 ```
 

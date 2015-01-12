@@ -15,13 +15,13 @@ For the example commands below, we assume you're on Ubuntu 14.04 or later. But m
 If you're on Windows/Mac try installing [Vagrant](https://docs.vagrantup.com/v2/installation/index.html) and then run:
 
 ``` bash
-vagrant init hashicorp/trusty32
+vagrant init ubuntu/trusty32
 vagrant up
 ```
 
 Congratulations, you are running Ubuntu/Linux! Proceed.
 
-### libc/libstdc++/libseccomp (32-bit)
+### 32-bit libc/libstdc++/libseccomp (Only needed for 64-bit environment)
 
 In case your processor architecture is 64-bit, you have to make sure the 32-bit versions of libc, libstdc++ and libseccomp are installed.
 

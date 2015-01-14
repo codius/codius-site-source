@@ -17,11 +17,13 @@ If you're on Windows/Mac try installing [Vagrant](https://docs.vagrantup.com/v2/
 ``` bash
 vagrant init ubuntu/trusty32
 vagrant up
+vagrant ssh
+sudo apt-get install git
 ```
 
 Congratulations, you are running Ubuntu/Linux! Proceed.
 
-### 32-bit libc/libstdc++/libseccomp (Only needed for 64-bit environment)
+### 32-bit libc/libstdc++ (Skip if you're using Vagrant or a 32-bit installation)
 
 In case your processor architecture is 64-bit, you have to make sure the 32-bit versions of libc, libstdc++ and libseccomp are installed.
 
@@ -29,7 +31,13 @@ On Ubuntu, simply run:
 
 ``` bash
 sudo dpkg --add-architecture i386
-sudo apt-get install libc6-i386 lib32stdc++6 libseccomp2:i386
+sudo apt-get install libc6-i386 lib32stdc++6 
+```
+
+### libseccomp 
+
+```
+sudo apt-get install libseccomp2:i386
 ```
 
 ### Node.js
@@ -42,13 +50,10 @@ On Ubuntu, you can install Node.js simply by:
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 sudo apt-get install nodejs
-
-# Debian package maintainers thought it was a good idea to rename the
-# executable, so we need to create a symlink for the correct name.
 sudo ln -s /usr/bin/nodejs /usr/local/bin/node
 ```
 
-## Installation
+## Codius Installation
 
 Alright, now we're ready to install Codius. Go ahead and run:
 

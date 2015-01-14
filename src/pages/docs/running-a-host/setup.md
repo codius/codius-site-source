@@ -38,6 +38,12 @@ cd your-contract-directory
 CODIUS_HOST=https://your-host-name.com:2633 codius upload
 ```
 
+If your Codius host is using a self-signed SSL certificate (potentially for developement), you will need to enable tls connections with self-signed certs by setting the `CODIUS_UNAUTHORIZED_SSL` environment variable to true:
+
+``` sh
+CODIUS_UNAUTHORIZED_SSL=true CODIUS_HOST=https://your-host-name.com:2633 codius upload
+```
+
 ## Local hostname
 
 In order to use a local Codius host, you need to redirect requests like abcabc-abcabc-abcabc.example.com to your local host. Unfortunately, `/etc/hosts` does not allow you to specify wildcard hosts.

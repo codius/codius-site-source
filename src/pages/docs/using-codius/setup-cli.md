@@ -21,14 +21,15 @@ vagrant up
 
 Congratulations, you are running Ubuntu/Linux! Proceed.
 
-### libc/libstdc++ (32-bit)
+### libc/libstdc++/libseccomp (32-bit)
 
-In case your processor architecture is 64-bit, you have to make sure the 32-bit versions of libc and libstdc++ are installed.
+In case your processor architecture is 64-bit, you have to make sure the 32-bit versions of libc, libstdc++ and libseccomp are installed.
 
 On Ubuntu, simply run:
 
 ``` bash
-sudo apt-get install libc6-i386 lib32stdc++6
+sudo dpkg --add-architecture i386
+sudo apt-get install libc6-i386 lib32stdc++6 libseccomp2:i386
 ```
 
 ### Node.js

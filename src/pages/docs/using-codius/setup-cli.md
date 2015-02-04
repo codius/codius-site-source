@@ -18,7 +18,6 @@ If you're on Windows/Mac try installing [Vagrant](https://docs.vagrantup.com/v2/
 vagrant init ubuntu/trusty32
 vagrant up
 vagrant ssh
-sudo apt-get install git
 ```
 
 Congratulations, you are running Ubuntu/Linux! Proceed.
@@ -31,13 +30,16 @@ On Ubuntu, simply run:
 
 ``` bash
 sudo dpkg --add-architecture i386
-sudo apt-get install libc6-i386 lib32stdc++6 
+sudo apt-get update
+sudo apt-get install libc6-i386 lib32stdc++6 libseccomp2:i386
 ```
 
-### libseccomp 
+### git
 
-```
-sudo apt-get install libseccomp2:i386
+Install git by running:
+
+```bash
+sudo apt-get install git
 ```
 
 ### Node.js

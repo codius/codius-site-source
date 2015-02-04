@@ -12,8 +12,6 @@ Codius has four major components:
 * [Host](https://github.com/codius/codius-host)
 * [CLI](https://github.com/codius/codius-cli)
 
-All of them can be installed at once via ``npm install codius``.
-
 # Minimum Requirements
 
 Codius has a minimal set of external dependencies to be built and installed:
@@ -22,4 +20,8 @@ Codius has a minimal set of external dependencies to be built and installed:
 * Linux kernel newer than 2.6.31
 * libseccomp
 
-Once Codius is installed, you can start with [Setting up the CLI](setup-cli)
+# Install Codius
+
+Visit [www.npmjs.com/package/codius](https://www.npmjs.com/package/codius) for instructions to install the Codius command-line interface (CLI)
+
+Once Codius is installed, you can try [running an example](running-the-examples).

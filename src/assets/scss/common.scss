@@ -353,3 +353,18 @@ footer {
     opacity: 0;
   }
 }
+
+dt {
+  float: left;
+  clear: left;
+  width: 180px;
+  overflow: hidden;
+  text-align: right;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+dd {
+  margin-left: 200px;
+  margin-bottom: 1em;
+}

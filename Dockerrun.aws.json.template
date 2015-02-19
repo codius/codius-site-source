@@ -1,0 +1,16 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Authentication": {
+    "Bucket": "codius-deploy",
+    "Key": "dockercfg"
+  },
+  "Image": {
+    "Name": "quay.io/codius/codius.org:<TAG>",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "8080"
+    }
+  ]
+}

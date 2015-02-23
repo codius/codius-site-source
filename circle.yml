@@ -13,7 +13,11 @@ test:
       - docker run -d -p 8080:8080 quay.io/codius/codius.org:$CIRCLE_SHA1; sleep 5
       - curl --retry 10 --retry-delay 5 -v http://localhost:8080
 deployment:
-  quay:
+  staging:
+    branch: develop
+    commands: 
+      - ./deploy.sh $CIRCLE_SHA1 staging
+  production:
     branch: master
     commands: 
-      - ./deploy.sh $CIRCLE_SHA1
+      - ./deploy.sh $CIRCLE_SHA1 codius-dot-org-env

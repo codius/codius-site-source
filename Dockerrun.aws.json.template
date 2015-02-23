@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Authentication": {
-    "Bucket": "codius-deploy",
+    "Bucket": "codius-circleci-us-west-1",
     "Key": "dockercfg"
   },
   "Image": {

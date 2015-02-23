@@ -1,4 +1,4 @@
-FROM dockerfile/nodejs
+FROM quay.io/codius/codius.org:base
 WORKDIR /var/www
 
 # Install NPM packages

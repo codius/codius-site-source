@@ -32,6 +32,52 @@
       };
     };
 
+  // metrics handling
+  var handleEvents = (function() {
+
+    var showDebug;
+
+    function init(isDebug) {
+      showDebug = isDebug || false;
+
+      $('body').on('click', handleEvent);
+    }
+
+    function handleEvent(e) {
+      if (showDebug) {
+        e.preventDefault();
+      }
+
+      var $targ = $(e.target),
+          data = $targ.data('metrics') || [];
+
+      if (data.length) {
+        sendEvent(data);
+      }
+    }
+
+    function sendEvent(args) {
+      var gaArgs = ['send', 'event'];
+
+      if (!args && typeof ga === 'undefined') {
+        return false;
+      }
+
+      gaArgs = gaArgs.concat(args);
+
+      if (showDebug) {
+        console.log(gaArgs);
+      }
+
+      ga.apply(null, gaArgs);
+    }
+
+    return init;
+  })();
+
+  handleEvents();
+  // end metrics handling
+
   $document.ready(function () {
 
     var $postContent = $(".post-content");

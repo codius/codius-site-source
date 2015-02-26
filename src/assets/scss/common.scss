@@ -228,9 +228,11 @@ footer {
 .footer-nav .nav-title {
   font-size: 2rem;
   font-weight: 400;
+  text-align: left;
 }
 
 .footer-nav .nav-item {
+  margin-left: 0;
 }
 
 .footer-nav .nav-title a {

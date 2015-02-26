@@ -20,12 +20,18 @@
 
       {{#block "header-menu"}}
       <div class="collapse navbar-collapse" id="navbar-menu">
-        <a href="https://github.com/codius" class="btn btn-default navbar-btn navbar-right menu-github"><i class="icon-github"></i>&ensp;Github</a>
+        <a href="https://github.com/codius" class="btn btn-default navbar-btn navbar-right menu-github"
+          data-metrics='["topbar", "nav", "github"]'><i class="icon-github"></i>&ensp;Github</a>
         <ul id="nav" class="nav navbar-nav navbar-right">
-          <li><a href="/"><i class="icon-home"></i>Home</a></li>
-          <li><a href="/docs/"><i class="icon-file"></i>Docs</a></li>
+          <li>
+            <a href="/" data-metrics='["topbar", "nav", "/"]'><i class="icon-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="/docs/" data-metrics='["topbar", "nav", "/docs"]'><i class="icon-file"></i>Docs</a>
+          </li>
           {{!-- <li><a href="/playground/"><i class="icon-play"></i>Playground</a></li> --}}
-          <li><a href="/blog/"><i class="icon-quill"></i>Blog</a></li>
+          <li><a href="/blog/" data-metrics='["topbar", "nav", "/blog"]'>
+            <i class="icon-quill"></i>Blog</a></li>
         </ul>
       </div>
       {{/block}}

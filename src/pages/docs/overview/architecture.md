@@ -19,6 +19,6 @@ Codius is a hosting platform and accompagnying client. We generally distinguish 
 
 * **Developers** create applications and deploy them on top of Codius. They use [`codius-cli`](https://github.com/codius/cli) to locally test, package and upload apps.
 
-Both [`codius-cli`](https://github.com/codius/cli) and [`codius-host`](https://github.com/codius/host) utilize [`codius-engine`](https://github.com/codius/engine) in order to run contracts isolated from each other and from the outside world.
+Both [`codius-cli`](https://github.com/codius/cli) and [`codius-host`](https://github.com/codius/host) utilize [`codius-engine`](https://github.com/codius/engine) in order to run applications isolated from each other and from the outside world.
 
 ![Architecture Diagram](/src/assets/img/docs/architecture-overview.png)

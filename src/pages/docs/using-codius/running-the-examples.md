@@ -3,22 +3,22 @@ title: Running the Examples
 section: docs
 ---
 
-# Example Contracts
+# Example Applications
 
-Codius has a number of example contracts to help you get started
+Codius has a number of example applications to help you get started
 
-## Hello, World!
+## [Hello, World!](https://github.com/codius/example-helloworld)
 
-The first contract is a simple Hello World example that prints "Hello, World!"
+The first example is a simple Hello World script that prints "Hello, World!"
 to the terminal. Running it can be done in three steps:
 
 * ``git clone git://github.com/codius/example-helloworld``
 * ``cd example-helloworld``
 * ``codius run``
 
-## Webserver
+## [Webserver](https://github.com/codius/example-webserver)
 
-The webserver example contract creates a HTTP server listening on port 8000.
+The webserver example application creates a HTTP server listening on port 8000.
 
 * ``git clone git://github.com/codius/example-webserver``
 * ``cd example-webserver``

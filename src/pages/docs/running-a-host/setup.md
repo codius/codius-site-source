@@ -31,10 +31,10 @@ node app
 
 Once the host is running, you can interact with it using the [Codius CLI](https://www.npmjs.com/package/codius).
 
-You will be able to run a contract on your host with:
+You will be able to run an application on your host with:
 
 ``` sh
-cd your-contract-directory
+cd your-application-directory
 CODIUS_HOST=https://your-host-name.com:2633 codius upload
 ```
 
@@ -56,4 +56,4 @@ echo 'address=/localcodius/127.0.0.1' | sudo tee --append /etc/dnsmasq.conf
 sudo /etc/init.d/dnsmasq restart
 ```
 
-You will be able to access local contracts using URLs like https://abcabc-abcabc-abcabc.localcodius:2633.
+You will be able to access local application instances using URLs like https://abcabc-abcabc-abcabc.localcodius:2633.

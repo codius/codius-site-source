@@ -7,7 +7,7 @@ section: docs
 
 Codius fits into the middle tier of the standard three-tier architecture:
 
-![Codius 3-Tier Architecture](/src/assets/img/docs/three-tier-architecture.png)
+![Codius 3-Tier Architecture](/assets/img/docs/three-tier-architecture.png)
 
 Previously, most distributed applications in the cryptocurrency community were written in such a way that clients interacted directly with ledgers/blockchains (databases). However, oftentimes applications need to interact with multiple clients, multiple ledgers/blockchains and other Internet services. An application logic layer is the ideal place to host such functionality.
 
@@ -21,4 +21,4 @@ Codius is a hosting platform and accompagnying client. We generally distinguish 
 
 Both [`codius-cli`](https://github.com/codius/cli) and [`codius-host`](https://github.com/codius/host) utilize [`codius-engine`](https://github.com/codius/engine) in order to run contracts isolated from each other and from the outside world.
 
-![Architecture Diagram](/src/assets/img/docs/architecture-overview.png)
+![Architecture Diagram](/assets/img/docs/architecture-overview.png)

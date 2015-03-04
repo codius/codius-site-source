@@ -13,7 +13,7 @@ Previously, most distributed applications in the cryptocurrency community were w
 
 # How Codius works
 
-Codius is a hosting platform and accompagnying client. We generally distinguish two roles:
+Codius is a hosting platform and accompanying client. We generally distinguish two roles:
 
 * **Codius Hosts** are companies or individuals who are looking to earn money by operating servers to host other people's applications. They use [`codius-host`](https://github.com/codius/host) in order to provide the necessary APIs for uploading apps.
 

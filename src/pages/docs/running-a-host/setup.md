@@ -29,7 +29,7 @@ To start running the host, use the command:
 node app
 ```
 
-Once the host is running, you can interact with it using the [Codius CLI](../using-codius/setup-cli.md).
+Once the host is running, you can interact with it using the [Codius CLI](https://www.npmjs.com/package/codius).
 
 You will be able to run a contract on your host with:
 

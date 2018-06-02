@@ -14,12 +14,10 @@ contributors to follow so that we can have a chance of keeping on top of things.
 
 ## Getting Started
 
-Codius is organized into four major repositories:
+Codius is organized into two major repositories:
 
-* [Sandbox](https://github.com/codius/codius-sandbox)
-* [Engine](https://github.com/codius/codius-engine)
-* [Host](https://github.com/codius/codius-host)
-* [CLI](https://github.com/codius/codius-cli)
+* [codiusd](https://github.com/coilhq/codiusd)
+* [codius-cli](https://github.com/coilhq/codius-cli)
 
 ## Making Changes
 

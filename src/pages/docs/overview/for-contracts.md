@@ -1,3 +1,4 @@
+
 ---
 title: Codius for Smart Contracts
 section: docs
@@ -10,7 +11,7 @@ Smart contracts are programs that encode the logic, conditions, and outcomes of 
 Codius is a platform for securely executing smart contracts and other types of smart programs.
 
 Smart contracts run on Codius can:
-* hold assets in one or multiple math-based distributed ledgers, such as Bitcoin and Ripple
+* hold assets in one or multiple math-based distributed ledgers, such as Bitcoin and XRP
 * collect information from any source connected to the internet
 * be written in standard programming languages
 

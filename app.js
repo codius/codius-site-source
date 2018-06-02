@@ -13,11 +13,11 @@ app.get('/', function (req, res) {
 })
 
 app.get('/docs', function(req, res) {
-	// fs.readFile(__dirname + '/web/docs/using-codius/getting-started.html', { encoding: 'utf8' }, function (error, buffer) {
-	// 	if (error) return res.status(404).end()
-	//     res.send(buffer)
-	// })
 	res.redirect('/docs/using-codius/getting-started')
+})
+
+app.get('/blog', function(req, res) {
+	res.redirect('https://medium.com/coil')
 })
 
 app.get('/*', function (req, res) {

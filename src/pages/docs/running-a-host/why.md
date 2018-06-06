@@ -8,7 +8,7 @@ Running a Codius host means being in the hosting business. You should do it, if 
 
 # Earning money
 
-The [Codius host software](https://github.com/codius/codius-host) supports Bitcoin and Ripple billing right out of the box. Additionally, developers can build custom billing modules to allow alternate payment methods. Codius billing is resource-driven, you should see a very strong correlation between the load on your servers (and the number of servers required) and the amount of money earned.
+The payments component of a Codius host, [Moneyd](https://github.com/interledgerjs/moneyd) supports XRP billing right out of the box. Additionally, developers can build custom billing modules to allow alternate payment methods. Codius billing is resource-driven, you should see a very strong correlation between the load on your servers (and the number of servers required) and the amount of money earned.
 
 # Setup costs
 

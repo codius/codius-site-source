@@ -1,14 +1,62 @@
-{{#replace "title"}}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
 <title>Codius - Open-source Hosting Platform for Smart Programs</title>
-{{/replace}}
+  <meta name="description" content="" />
 
-{{#append "styles"}}
-<link rel="stylesheet" type="text/css" href="{{asset "css/front-page.css"}}" />
-{{/append}}
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-{{#replace "body"}}
-<body class="near-top">
-{{/replace}}
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-256x256.png" sizes="256x256" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/front-page.css" />
+
+  <script src="//use.typekit.net/ftt0wcm.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body class=" near-top">
+
+  <header class="main-header">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header collapsed">
+          <button type="button" class="navbar-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <i id="navbar-logo" class="icon-logo navbar-brand"></i>
+          <a id="navbar-brand" class="navbar-brand">
+            Codius <span></span>
+          </a>
+        </div>
+  
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <a href="https://github.com/codius" class="btn btn-default navbar-btn navbar-right menu-github"><i class="icon-github"></i>&ensp;Github</a>
+          <ul id="nav" class="nav navbar-nav navbar-right">
+            <li><a href="/"><i class="icon-home"></i>Home</a></li>
+            <li><a href="/docs/"><i class="icon-file"></i>Docs</a></li>
+            <li><a href="https://medium.com/coil"><i class="icon-quill"></i>Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="drawer">
+    <ul id="drawer-nav" class="nav"></ul>
+    <ul id="drawer-subnav" class="nav"></ul>
+  </div>
+  <div class="canvas clearfix">
+    
+
 <section class="hero text-center">
   <div style="height: 200px">
   <div class="animation">
@@ -30,8 +78,6 @@
   <div class="actions">
     <p>
       <a class="btn btn-primary" href="https://www.npmjs.com/package/codius" role="button">Install developer tools</a>
-      {{!-- &ensp;
-      <a class="btn btn-default" href="/playground/" role="button">See live examples</a> --}}
     </p>
   </div>
 </section>
@@ -49,9 +95,6 @@
       <div class="col-md-12">
         <h1>What is Codius?</h1>
         <p>Codius is an open hosting protocol. It makes it very easy to upload a program, whether you want it to run on one host or thousands.</p>
-        {{!-- <div class="hostcount-logo"><i class="icon-logo"></i></div>
-        <div><input type="range" class="hostcount-slide" min="1" max="999" value="1"></div>
-        <pre class="hostcount-pre"><code>codius upload</code></pre> --}}
         <p>It also has built-in billing. That means once a program is uploaded, anyone can pay to keep it running &mdash; the author, the users and even the program itself.</p>
         <p></p>
       </div>
@@ -123,6 +166,42 @@
   </div> <!-- /container -->
 </div>
 
-{{#append "scripts"}}
-<script src="{{asset "js/front-page.js"}}"></script>
-{{/append}}
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="/">
+            <i class="icon-logo"></i>
+            <span>Codius</span>
+          </a>
+        </div>
+        <dl class="footer-nav">
+          <dt class="nav-title"><a href="/docs/">DOCS</a></dt>
+          <dd class="nav-item"><a href="/docs/using-codius/getting-started">Getting started</a></dd>
+        </dl>
+        <dl class="footer-nav">
+          <dt class="nav-title">RESOURCES</dt>
+          <dd class="nav-item"><a href="https://medium.com/coil">Blog</a></dd>
+          <dd class="nav-item"><a href="https://github.com/codius/">Github</a></dd>
+        </dl>
+        <dl class="footer-nav">
+          <dt class="nav-title">COMMUNITY</dt>
+          <dd class="nav-item"><a href="https://gitter.im/codius/codius-chat">Chat</a></dd>
+          <dd class="nav-item"><a href="https://groups.google.com/forum/#!forum/codius/">Mailing list</a></dd>
+        </dl>
+      </div>
+      <div class="footer-copyright text-center">
+    <!--      -->
+        <section class="copyright">&copy; 2018 Codius</section>
+      </div>
+    </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+      <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+      <script type="text/javascript" src="/assets/js/index.js"></script>
+<script src="/assets/js/front-page.js"></script>
+  </div>
+</body>
+</html>

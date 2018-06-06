@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+<title>Codius Playground</title>
+  <meta name="description" content="" />
+
+  <meta name="HandheldFriendly" content="True" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-256x256.png" sizes="256x256" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/playground.css" />
+
+  <script src="//use.typekit.net/ftt0wcm.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body class=" near-top">
+
+  <header class="main-header">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="">
+        <div class="navbar-header collapsed">
+          <button type="button" class="navbar-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <i id="navbar-logo" class="icon-logo navbar-brand"></i>
+          <a id="navbar-brand" class="navbar-brand">
+  Codius <span>P<span class="hidden-sm hidden-xs">lay</span>g<span class="hidden-sm hidden-xs">round</span></span>
+          </a>
+        </div>
+  
+    <div class="navbar-left">
+      <a href="#" id="toolbar-run" class="btn btn-success navbar-btn"><i class="icon-play"></i><span class="hidden-xs hidden-sm">&nbsp;Run</span></a>
+    </div>
+    <div class="navbar-right">
+      <a href="#" id="toolbar-settings" class="btn btn-default navbar-btn"><i class="icon-cog"></i><span class="hidden-xs hidden-sm">&ensp;Settings</span></a>
+    </div>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <a href="https://github.com/codius" class="btn btn-default navbar-btn navbar-right menu-github"><i class="icon-github"></i>&ensp;Github</a>
+          <ul id="nav" class="nav navbar-nav navbar-right">
+            <li><a href="/"><i class="icon-home"></i>Home</a></li>
+            <li><a href="/docs/"><i class="icon-file"></i>Docs</a></li>
+            <li><a href="https://medium.com/coil"><i class="icon-quill"></i>Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="drawer">
+    <ul id="drawer-nav" class="nav"></ul>
+    <ul id="drawer-subnav" class="nav"></ul>
+  </div>
+  <div class="canvas clearfix">
+    
+
+
+
+
+
+<div id="editor">function sayHello() {
+  console.log('Hello, World');
+}
+
+for (var i = 0; i < 5; i++) {
+  sayHello();
+}</div>
+
+<div id="output">Uploading contract...
+Testing 123
+Hello world</div>
+
+
+<script src="/assets/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  var editor = ace.edit("editor");
+  editor.setTheme("ace/theme/monokai");
+  editor.setOptions({
+    fontFamily: "source-code-pro",
+    fontSize: "10pt"
+  });
+  editor.getSession().setMode("ace/mode/javascript");
+</script>
+</body>
+</html>
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+      <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+      <script type="text/javascript" src="/assets/js/index.js"></script>
+  </div>
+</body>
+</html>

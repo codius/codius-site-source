@@ -7,19 +7,16 @@ section: docs
 
 Codius has four major components:
 
-* [Sandbox](https://github.com/codius/codius-sandbox)
-* [Engine](https://github.com/codius/codius-engine)
-* [Host](https://github.com/codius/codius-host)
-* [CLI](https://github.com/codius/codius-cli)
+* [Codiusd](https://github.com/codius/codiusd)
+* [Moneyd](https://github.com/interledgerjs/moneyd)
+* [CLI](https://github.com/codius/codius)
 
 # Minimum Requirements
 
 Codius has a minimal set of external dependencies to be built and installed:
 
-* NodeJS
-* npm version 1.4.28 or newer
-* Linux kernel newer than 2.6.31
-* libseccomp
+* NodeJS 10 or newer
+* CentOS 7
 
 # Install Codius
 

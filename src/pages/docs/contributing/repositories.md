@@ -17,7 +17,7 @@ contributors to follow so that we can have a chance of keeping on top of things.
 Codius is organized into two major repositories:
 
 * [codiusd](https://github.com/codius/codiusd)
-* [codius-cli](https://github.com/codius/codius-cli)
+* [codius-cli](https://github.com/codius/codius)
 
 ## Making Changes
 

@@ -15,10 +15,10 @@ Previously, most distributed applications in the cryptocurrency community were w
 
 Codius is a hosting platform and accompanying client. We generally distinguish two roles:
 
-* **Codius Hosts** are companies or individuals who are looking to earn money by operating servers to host other people's applications. They use [`codiusd`](https://github.com/coilhq/codiusd) in order to provide the necessary APIs for uploading apps.
+* **Codius Hosts** are companies or individuals who are looking to earn money by operating servers to host other people's applications. They use [`codiusd`](https://github.com/codius/codiusd) in order to provide the necessary APIs for uploading apps. `codiusd` also creates a [pod](https://kubernetes.io/docs/concepts/workloads/pods/pod/) and the necessary amount of [containers](https://www.docker.com/what-container). These pods are granted access to a [moneyd](https://github.com/interledgerjs/moneyd) instance that allows both the host and its pods to send and receive payments over [Interledger](https://interledger.org).
 
-* **Developers** create applications and deploy them on top of Codius. They use [`codius-cli`](https://github.com/coilhq/codius-cli) to locally test, package and upload apps.
+* **Developers** create applications and deploy them on top of Codius. They use [`codius`](https://github.com/codius/codius) to upload apps. The upload is accomplished via a [manifest](https://github.com/codius/codius-manifest) that describes information about the program such as its name, version, environment variables, and a Docker image to pull. (Images are pulled from Dockerhub by default.)
 
-[ `codius-host`](https://github.com/coilhq/codisud) utilizes [`hyperd`](https://github.com/hyperhq/hyperd) in order to run applications isolated from each other and from the outside world.
+[ `codius-host`](https://github.com/codius/codisud) utilizes [`hyperd`](https://github.com/hyperhq/hyperd) in order to run applications isolated from each other and from the outside world.
 
 ![Architecture Diagram](/assets/img/docs/architecture-overview.png)

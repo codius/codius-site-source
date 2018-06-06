@@ -3,7 +3,7 @@ var fs = require('fs')
 
 var app = express()
 
-app.use(express.static('web'))
+app.use(express.static('.'))
 
 app.get('/', function (req, res) {
   fs.readFile(__dirname + '/web/index.html', { encoding: 'utf8' }, function (error, buffer) {

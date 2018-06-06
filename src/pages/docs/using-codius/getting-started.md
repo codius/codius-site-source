@@ -7,9 +7,9 @@ section: docs
 
 Codius has four major components:
 
-* [Codiusd](https://github.com/coilhq/codiusd)
+* [Codiusd](https://github.com/codius/codiusd)
 * [Moneyd](https://github.com/interledgerjs/moneyd)
-* [CLI](https://github.com/coilhq/codius-cli)
+* [CLI](https://github.com/codius/codius)
 
 # Minimum Requirements
 
@@ -20,6 +20,6 @@ Codius has a minimal set of external dependencies to be built and installed:
 
 # Install Codius
 
-Visit [www.npmjs.com/package/codius-cli](https://www.npmjs.com/package/codius-cli) for instructions to install the Codius command-line interface (CLI)
+Visit [www.npmjs.com/package/codius](https://www.npmjs.com/package/codius) for instructions to install the Codius command-line interface (CLI)
 
 Once Codius is installed, you can try [running an example](running-the-examples).

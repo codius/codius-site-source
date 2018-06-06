@@ -14,20 +14,23 @@ var path = require('path');
 gulp.task('assets', function () {
   return gulp
     .src('./src/assets/{fonts,css,img}/**/*', {base: './src/assets'})
-    .pipe(gulp.dest('./web/assets'));
+    // .pipe(gulp.dest('./web/assets'));
+    .pipe(gulp.dest('./assets'));
 });
 
 gulp.task('favicon', function () {
   return gulp
     .src('./src/assets/img/favicon.ico')
-    .pipe(gulp.dest('./web'));
+    // .pipe(gulp.dest('./web'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('js', function () {
   return gulp
     .src('./src/assets/js/**/*', {base: './src/assets'})
     .pipe(include())
-    .pipe(gulp.dest('./web/assets'));
+    // .pipe(gulp.dest('./web/assets'));
+    .pipe(gulp.dest('./assets'));
 });
 
 gulp.task('css', function () {
@@ -37,7 +40,9 @@ gulp.task('css', function () {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(gulp.dest('./web/assets/css'));
+    // .pipe(gulp.dest('./web/assets/css'));
+    .pipe(gulp.dest('./assets/css'));
+
 });
 
 gulp.task('docs', function () {
@@ -67,7 +72,8 @@ gulp.task('docs', function () {
         './src/layouts/**/*.hbs'
       ]
     }))
-    .pipe(gulp.dest('./web/docs/'));
+    // .pipe(gulp.dest('./web/docs/'));
+    .pipe(gulp.dest('./docs/'));
 });
 
 gulp.task('web', function () {
@@ -97,7 +103,8 @@ gulp.task('web', function () {
       ]
     }))
     .pipe(ext('.html'))
-    .pipe(gulp.dest('./web/'));
+    // .pipe(gulp.dest('./web/'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('watch', function() {

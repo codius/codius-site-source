@@ -21,3 +21,9 @@ web/
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# Compiled HTML
+docs/*
+index.html
+assets/*
+

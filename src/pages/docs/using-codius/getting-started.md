@@ -5,7 +5,7 @@ section: docs
 
 # Getting started with Codius
 
-Codius has four major components:
+Codius has three major components:
 
 * [Codiusd](https://github.com/codius/codiusd)
 * [Moneyd](https://github.com/interledgerjs/moneyd)
@@ -22,4 +22,4 @@ Codius has a minimal set of external dependencies to be built and installed:
 
 Visit [www.npmjs.com/package/codius](https://www.npmjs.com/package/codius) for instructions to install the Codius command-line interface (CLI)
 
-Once Codius is installed, you can try [running an example](running-the-examples).
+Once Codius is installed, you can try [running an example](/docs/using-codius/running-the-examples).

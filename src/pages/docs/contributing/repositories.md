@@ -42,7 +42,12 @@ Codius is organized into two major repositories:
 * After feedback is given, we expect responses within two weeks. After two weeks
   we may close the pull request if it isn't showing any activity.
 
+## Contributing to the FAQ
+
+Some common nuances of Codius and its related software are too minor to warrant their own document, but are still valuable pieces of information. If you have some information to contribute, make your contributions and open a pull request [here](https://github.com/codius/codius-wiki).
+
 ## Additional Resources
 
 * [General GitHub documentation](https://help.github.com)
 * [GitHub pull request documentation](https://help.github.com/send-pull-requests)
+* [Codius Wiki](https://github.com/codius/codiusd/wiki)

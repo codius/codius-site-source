@@ -20,4 +20,4 @@ Most hosting platforms require developers to make a choice between centralized h
 ## Stronger Security
 With the hardware isolation methods that Codius uses, hosts are protected from buggy code affecting their servers. Codius' independence from an underlying blockchain also means that any bad or poor code cannot directly threaten any potential blockchains that developers choose to integrate.
 
-The design of Codius also allows for secure distribution - one can distribute a contract cotaining secrets or other sensitive information, while sitll preventing any one host of the contract from learning them.
+The design of Codius also allows for secure distribution - one can distribute a contract containing secrets or other sensitive information, while sitll preventing any one host of the contract from learning them.

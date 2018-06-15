@@ -19,6 +19,6 @@ Codius is a hosting platform and accompanying client. We generally distinguish t
 
 * **Developers** create applications and deploy them on top of Codius. They use [`codius`](https://github.com/codius/codius) to upload apps. The upload is accomplished via a [manifest](https://github.com/codius/codius-manifest) that describes information about the program such as its name, version, environment variables, and a Docker image to pull. (Images are pulled from Dockerhub by default.)
 
-[ `codius-host`](https://github.com/codius/codisud) utilizes [`hyperd`](https://github.com/hyperhq/hyperd) in order to run applications isolated from each other and from the outside world.
+[ `codiusd`](https://github.com/codius/codisud) utilizes [`hyperd`](https://github.com/hyperhq/hyperd) in order to run applications isolated from each other and from the outside world.
 
 ![Architecture Diagram](/assets/img/docs/architecture-overview.png)

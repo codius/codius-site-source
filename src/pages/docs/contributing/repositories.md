@@ -50,4 +50,4 @@ Some common nuances of Codius and its related software are too minor to warrant 
 
 * [General GitHub documentation](https://help.github.com)
 * [GitHub pull request documentation](https://help.github.com/send-pull-requests)
-* [Codius Wiki](https://github.com/codius/codiusd/wiki)
+* [Codius Wiki](https://github.com/codius/codius-wiki/wiki)

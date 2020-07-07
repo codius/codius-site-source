@@ -13,12 +13,10 @@ Previously, most distributed applications in the cryptocurrency community were w
 
 # How Codius works
 
-Codius is a hosting platform and accompanying client. We generally distinguish two roles:
+Codius is a hosting platform. We generally distinguish two roles:
 
-* **Codius Hosts** are companies or individuals who are looking to earn money by operating servers to host other people's applications. They use [`codiusd`](https://github.com/codius/codiusd) in order to provide the necessary APIs for uploading apps. `codiusd` also creates a [pod](https://kubernetes.io/docs/concepts/workloads/pods/pod/) and the necessary amount of [containers](https://www.docker.com/what-container). These pods are granted access to a [moneyd](https://github.com/interledgerjs/moneyd) instance that allows both the host and its pods to send and receive payments over [Interledger](https://interledger.org).
+* **Codius Hosts** are companies or individuals who are looking to earn money by operating servers to host other people's applications. They use several components ([`codius-operator`](https://github.com/codius/codius-operator), [`codius-web`](https://github.com/codius/codius-web), [`codius-auth`](https://github.com/codius/codius-auth)) in a Kubernetes cluster in order to accept [Interledger](https://interledger.org) payments and provide the necessary APIs for uploading apps. `codius-operator` also creates a [pod](https://kubernetes.io/docs/concepts/workloads/pods/pod/) and the necessary amount of [containers](https://www.docker.com/what-container).
 
-* **Developers** create applications and deploy them on top of Codius. They use [`codius`](https://github.com/codius/codius) to upload apps. The upload is accomplished via a [manifest](https://github.com/codius/codius-manifest) that describes information about the program such as its name, version, environment variables, and a Docker image to pull. (Images are pulled from Dockerhub by default.)
+* **Developers** create applications and deploy them to a Codius host. They use [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/) to upload apps to the host's Kubernetes cluster. The upload is accomplished via a [manifest](https://godoc.org/github.com/codius/codius-crd-operator/api/v1alpha1#Service) that describes information about the program such as its name, version, environment variables, and a Docker image to pull. (Images are pulled from [Docker Hub](https://hub.docker.com/) by default.)
 
-[ `codiusd`](https://github.com/codius/codisud) utilizes [`hyperd`](https://github.com/hyperhq/hyperd) in order to run applications isolated from each other and from the outside world.
-
-![Architecture Diagram](/assets/img/docs/architecture-overview.png)
+By default, [ `codius-operator`](https://github.com/codius/codius-operator) utilizes [`Kata Containers`](https://katacontainers.io/) in order to run applications isolated from each other and from the outside world.

@@ -5,9 +5,11 @@ section: docs
 
 # Installing the CLI
 
-In order to upload programs to Codius hosts, you'll need to install the CLI.
+In order to upload programs to Codius hosts, you'll need to install the [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) CLI.
 
-``npm install -g codius``
+# Pay the Codius Host
+
+Navigate to the Codius host in a web browser with a [Web Monetization](https://webmonetization.org/) provider enabled, and note the token.
 
 # Example Applications
 
@@ -15,50 +17,34 @@ Codius has a number of example applications to help you get started, which you c
 
 ``git clone git://github.com/codius/codius-examples``
 
-## [nginx](https://github.com/codius/codius-examples/blob/master/manifest/nginx-manifest.json)
+## [nginx](https://github.com/codius/codius-examples/blob/master/nginx.yaml)
 
 The first example is a simple nginx server:
 
-* ``cd codius-examples/manifest/``
-* ``codius upload ./nginx-manifest.json --host https://codius.feraltc.com``
+* ``cd codius-examples/``
+* ``KUBECONFIG=none kubectl create -f ./nginx.yaml -s https://<your-codius-host>.com --token="<your-token>"``
 
 You should get a response that looks something like this:
 ```
-{ url:
-   'http://MANIFEST_HASH.local.codius.org:3000/',
-  manifestHash: 'oooiikrql23xkjhvc6gobe7vjf5tiprodtmphqnwm7v3vx5g2csq',
-  host: 'http://local.codius.org:3000',
-  expiry: '2018-06-05T20:52:02.068Z',
-  expirationDate: '06-05-2018 1:52:02 -0700',
-  expires: 'a few seconds ago',
-  pricePaid: '4' }
+service.core.codius.org/nginx-codius-pod created
  ```
 
-Notice the `url` field in the response. You can use this url to query the pod you just launched, and it should return the standard nginx welcome page.
+If you get the following error, you can change the file's `metadata.name` field and retry:
+```
+Error from server (AlreadyExists): error when creating "nginx.yaml": services.core.codius.org "nginx-codius-pod" already exists
+```
 
-## [create-react-app](https://github.com/codius/codius-examples/blob/master/manifest/create-react-app-manifest.json)
+Notice the `nginx-codius-pod` in the response. You can use this as a subdomain on the host to query the pod you just launched (`https://nginx-codius-pod.example-host.com`), and it should return the standard nginx welcome page.
 
-Another available example pod launches the bootstrap React App, [create-react-app](https://github.com/codius/examples/blob/master/manifest/create-react-app-manifest.json)
+## [create-react-app](https://github.com/codius/codius-examples/blob/master/react-app.yaml)
 
-* ``cd codius-examples/manifest/``
-* ``codius upload ./create-react-app-manifest.json --host https://codius.feraltc.com``
+Another available example pod launches the bootstrap React App, [create-react-app](https://github.com/codius/examples/blob/master/react-app.yaml)
+
+* ``cd codius-examples/``
+* ``KUBECONFIG=none kubectl create -f ./react-app.yaml -s https://<your-codius-host>.com --token="<your-token>"``
 
 As before, you should get a similar response:
 
 ```
-{ url:
-   'https://MANIFEST_HASH.codius.feraltc.com/',
-  manifestHash: 'MANIFEST_HASH',
-  host: 'https://codius.feraltc.com',
-  expiry: '2018-06-05T20:52:02.068Z',
-  expirationDate: '06-05-2018 1:52:02 -0700',
-  expires: 'a few seconds ago',
-  pricePaid: '4' }
+service.core.codius.org/my-codius-create-react-app created
 ```
-
-Feel free to test these examples with some of the other hosts that the Codius team are running:
-
-* `https://codius.justmoon.com`
-* `https://codius.tinypolarbear.com`
-* `https://codius.risky.business`
-* `https://codius.andros-connector.com`

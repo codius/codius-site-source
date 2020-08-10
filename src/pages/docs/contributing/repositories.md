@@ -18,7 +18,7 @@ Codius is made up of the following major repositories:
 
 * [codius-operator](https://github.com/codius/codius-operator)
 * [codius-web](https://github.com/codius/codius-web)
-* [codius-auth](https://github.com/codius/codius-auth)
+* [receipt-verifier](https://github.com/coilhq/receipt-verifier)
 
 ## Making Changes
 

@@ -14,10 +14,11 @@ contributors to follow so that we can have a chance of keeping on top of things.
 
 ## Getting Started
 
-Codius is organized into two major repositories:
+Codius is made up of the following major repositories:
 
-* [codiusd](https://github.com/codius/codiusd)
-* [codius-cli](https://github.com/codius/codius)
+* [codius-operator](https://github.com/codius/codius-operator)
+* [codius-web](https://github.com/codius/codius-web)
+* [receipt-verifier](https://github.com/coilhq/receipt-verifier)
 
 ## Making Changes
 
